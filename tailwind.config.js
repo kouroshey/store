@@ -14,6 +14,9 @@ export default {
     },
     extend: {
       colors: {
+        "dark-1": 'rgb(0 0 0 / 15%)',
+        "dark-2": 'rgb(30 30 30 / 90%)',
+        "border-1": "rgb(255 255 255 / 15%)",
       },
       fontFamily: {
         Roboto: ['Roboto', 'sans-serif'],
