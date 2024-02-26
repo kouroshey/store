@@ -6,8 +6,11 @@ const Header = () => {
     return (
         <header className="bg-dark-1">
             <TopBar />
-            <MainSection />
+            <div className="border-y border-y-border-1 ">
+                <MainSection />
+            </div>
             <Navbar />
+
         </header>
     )
 }
