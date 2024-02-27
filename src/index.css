@@ -3,9 +3,10 @@
 @tailwind utilities;
 
 @layer base {
-    body {
-        color: rgb(255 255 255 / 70%);
-    }
+  body {
+    color: rgb(255 255 255 / 70%);
+  }
 }
 
-@layer utilities {}
+@layer utilities {
+}
