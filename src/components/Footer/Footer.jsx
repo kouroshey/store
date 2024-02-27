@@ -1,4 +1,3 @@
-import React from 'react';
 import './Footer.css';
 import { pTag, shopCategories, imgPayCard } from '../../data';
 import imgApple from '../../../public/assets/img/apple-store.png';
