@@ -62,11 +62,11 @@ const Footer = () => {
         {/* STAY INFORMED------------------------------------ */}
         <div className="flex flex-col gap-4 px-5 ">
           <h2 className="font-bold text-[#d8d5d5]">STAY INFORMED</h2>
-          <input type="email" className="px-3 py-[0.4rem] rounded-3xl text-white bg-[#67656550]" placeholder="Enter Your Email" />
+          <input type="email" className="px-3 py-2 rounded-3xl text-white bg-[#67656550] outline-none" placeholder="Enter Your Email" />
           <input type="button" value={'Subscribe'} className="px-3 py-2 bg-white text-black cursor-pointer" />
           <p className="text-sm">Subscribe to our newsletter to receive early discount offers, updates and new products info.</p>
           <h2>DOWNLOAD OUR APP</h2>
-          <div className="flex gap-3 ">
+          <div className="flex gap-3  flex-wrap max-w-xs ">
             <img src={imgApple} alt="" className="w-36 h-12 cursor-pointer" />
             <img src={imgGoogelplay} alt="" className="w-36 h-12 cursor-pointer" />
           </div>
