@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-import { pTag, shopCategories, imgPayCard } from '../../../../data';
+import { pTag, shopCategories, imgPayCard } from '../../data';
 import imgApple from '../../../public/assets/img/apple-store.png';
 import imgGoogelplay from '../../../public/assets/img/play-store.png';
 import arrowRight2 from '../../../public/assets/icons/icons8-forward-100.png';
@@ -8,9 +8,9 @@ import arrowRight2 from '../../../public/assets/icons/icons8-forward-100.png';
 const Footer = () => {
   console.log(imgPayCard);
   return (
-    <div className="bg-dark-1 px-28 py-2 flex flex-col gap-6 ">
+    <div className="bg-dark-1 px-28 py-2 flex flex-col gap-6 sm:px-5 sm:auto lg:px-30">
       {/* GRID 4 ROW */}
-      <div className="grid grid-cols-4 ">
+      <div className="grid grid-cols-4  sm:grid-rows-4 sm:grid-cols-1">
         {/* CONTACT INFO------------------------------------ */}
         <div className="flex flex-col  ">
           <h2 className="font-bold text-[#d8d5d5]">CONTACT INFO</h2>
@@ -45,7 +45,7 @@ const Footer = () => {
           ))}
         </div>
         {/* POPULAR TAGS------------------------------------ */}
-        <div>
+        <div className="min-h-0">
           <h2 className="font-bold text-[#d8d5d5]">POPULAR TAGS </h2>
           <div className="flex flex-row flex-wrap">
             {pTag.map((item, index) => {
@@ -61,30 +61,28 @@ const Footer = () => {
           </div>
         </div>
         {/* STAY INFORMED------------------------------------ */}
-        <div className="flex flex-col gap-4 px-10">
+        <div className="flex flex-col gap-4 px-5 ">
           <h2 className="font-bold text-[#d8d5d5]">STAY INFORMED</h2>
           <input type="email" className="px-3 py-[0.4rem] rounded-3xl text-white bg-[#67656550]" placeholder="Enter Your Email" />
           <input type="button" value={'Subscribe'} className="px-3 py-2 bg-white text-black cursor-pointer" />
           <p className="text-sm">Subscribe to our newsletter to receive early discount offers, updates and new products info.</p>
           <h2>DOWNLOAD OUR APP</h2>
-          <div className="flex gap-3">
-            <img src={imgApple} alt="" className="w-36 h-12" />
-            <img src={imgGoogelplay} alt="" className="w-36 h-12" />
+          <div className="flex gap-3 ">
+            <img src={imgApple} alt="" className="w-36 h-12 cursor-pointer" />
+            <img src={imgGoogelplay} alt="" className="w-36 h-12 cursor-pointer" />
           </div>
         </div>
       </div>
       {/* HR LINE ------------------------------------ */}
       <div className="flex-grow border-t border-[#ffffff4a]"></div>
-      <div>
-        <div className="flex justify-between items-center">
-          <p>Copyright © 2021. All right reserved.</p>
-          <div className="flex gap-5">
-            {imgPayCard.map((item, index) => (
-              <div key={index} className="rounded-lg w-[4.5rem] border-[1px] px-3 py-1 flex justify-center items-center bg-[#e2e2e223] ">
-                <img src={item} alt="" />
-              </div>
-            ))}
-          </div>
+      <div className="flex justify-between items-center gap-5  sm:flex-col ">
+        <p className="text-sm">Copyright © 2021. All right reserved.</p>
+        <div className="flex gap-5">
+          {imgPayCard.map((item, index) => (
+            <div key={index} className="rounded-lg w-[4.5rem] border-[1px] px-3 py-1 flex justify-center items-center bg-[#e2e2e223] ">
+              <img src={item} alt="" />
+            </div>
+          ))}
         </div>
       </div>
     </div>
