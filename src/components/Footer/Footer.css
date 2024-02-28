@@ -1,0 +1,9 @@
+.text-title {
+  @apply font-medium text-[14px];
+}
+.btn-category {
+  @apply cursor-pointer;
+}
+img {
+  color: aqua;
+}
