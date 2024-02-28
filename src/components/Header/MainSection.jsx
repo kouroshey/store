@@ -5,18 +5,18 @@ const MainSection = () => {
 
     return (
         <MainContainer>
-            <section className="py-4 gap-12 flex justify-between w-full">
+            <section className="py-4 gap-4 lg:gap-12 flex flex-col lg:flex-row justify-between w-full">
                 {/* START OF LOGO */}
-                <div>
+                <div className="hidden lg:flex order-1">
                     <Link to={"/"}>
                         <img src="/public/assets/logo-icon.png" className="w-28" alt="" srcset="" />
                     </Link>
                 </div>
                 {/* END OF LOGO */}
-                {/* START OF searchbar section */}
-                <div className="flex grow gap-0">
+                {/* START OF SEARCHBAR SECTION */}
+                <div className="flex grow gap-0 order-2">
                     <input placeholder="Search for Products" type="text" className="rounded-l-md bg-dark-1 border-border-1 border-2 py-2 w-full px-2 text-white outline-none" />
-                    <select name="" id="" className="text-white text-lg w-2/4 bg-dark-1 px-2 border-border-1 border-2">
+                    <select name="" id="" className="text-white text-lg w-3/4 bg-dark-1 px-2 border-border-1 border-2">
                         <option className="bg-dark-2" value="all">All Categories</option>
                         <option className="bg-dark-2" value="one">one</option>
                         <option className="bg-dark-2" value="two">two</option>
@@ -28,7 +28,7 @@ const MainSection = () => {
                 </div>
                 {/* END OF SEARCHBAR SECTION */}
                 {/* START OF CALL US NOW SECTION */}
-                <div className="flex gap-2">
+                <div className="gap-2 hidden xl:flex order-3">
                     <div>
                         <img src="/public/assets/icons/headphone.svg" className="w-8" />
                     </div>
@@ -38,16 +38,23 @@ const MainSection = () => {
                     </div>
                 </div>
                 {/* END OF CALL US NOW SECTION */}
-                {/* START OF LEFT SECTION ICONS */}
-                <div className="flex gap-4 items-center">
-                    <span><img className="w-8" src="/public/assets/icons/user.svg" /></span>
-                    <span><img className="w-8" src="/public/assets/icons/heart.svg" /></span>
-                    <span className="relative">
-                        <img className="w-8" src="/public/assets/icons/bag.svg" />
-                        <span className="absolute -top-1 -right-2 bg-dark-2 rounded-[50%] w-5 text-center text-white text-sm">8</span>
-                    </span>
+                {/* START OF RIGHT SECTION ICONS */}
+                <div className="w-full lg:w-max flex justify-between items-center order-1 lg:order-4">
+                    {/* START OF MOBILE MENU ICON */}
+                    <div className="lg:hidden">
+                        <img src="/public/assets/menu-icon.svg" className="w-5 hover:scale-105 cursor-pointer" alt="" srcset="" />
+                    </div>
+                    {/* END OF MOBILE MENU ICON */}
+                    <div className="flex gap-4 items-center">
+                        <span><img className="w-6" src="/public/assets/icons/user.svg" /></span>
+                        <span><img className="w-6" src="/public/assets/icons/heart.svg" /></span>
+                        <span className="relative">
+                            <img className="w-6" src="/public/assets/icons/bag.svg" />
+                            <span className="absolute -top-1 -right-2 bg-dark-2 rounded-[50%] w-5 text-center text-white text-sm">6</span>
+                        </span>
+                    </div>
                 </div>
-                {/* END OF LEFT SECTION ICONS */}
+                {/* END OF RIGHT SECTION ICONS */}
             </section>
         </MainContainer>
     )

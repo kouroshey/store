@@ -19,6 +19,7 @@ export const pTag = [
   'Sofa',
   'Shoes',
 ];
+
 export const shopCategories = [
   'Jeans',
   'T-Shirts',
@@ -31,5 +32,111 @@ export const shopCategories = [
   'Electronis',
   'Furniture',
 ];
+
+export const topbarItems = [
+  {
+    title: "Track Order",
+    url: "order-tracking"
+  },
+  {
+    title: "About",
+    url: "about-us"
+  },
+  {
+    title: "Our Stores",
+    url: "shop-categories"
+  },
+  {
+    title: "Blog",
+    url: "blog"
+  },
+  {
+    title: "Contact",
+    url: "contact-us"
+  },
+  {
+    title: "#",
+    url: "Help & FAQs"
+  },
+]
+
+export const langs = [
+  { name: "ENG", img: "/public/assets/flags/um.svg" },
+  { name: "GERMAN", img: "/public/assets/flags/de.svg" },
+  { name: "FRENCH", img: "/public/assets/flags/fr.svg" },
+]
+
+export const currencies = [
+  "USD", "EUR"
+]
+
+export const socialMediaIcons = [
+  { id: 1, name: "facebook", path: "/public/assets/icons/facebook.svg", url: "#" },
+  { id: 2, name: "X", path: "/public/assets/icons/X.svg", url: "#" },
+  { id: 3, name: "Linkedin", path: "/public/assets/icons/linkedin.svg", url: "#" },
+]
+
+export const menuNavItems = [
+  {
+    title: "HOME",
+    url: ""
+  },
+  {
+    title: "CATEGORIES",
+    url: "",
+    children: [
+      {
+        title: "FASHION",
+        items: [
+          {
+            title: "CASUAL T_SHIRTS",
+            url: ""
+          },
+          {
+            title: "CASUAL T_SHIRTS",
+            url: ""
+          },
+          {
+            title: "CASUAL T_SHIRTS",
+            url: ""
+          },
+        ]
+      },
+      {
+        title: "FASHION",
+        items: [
+          {
+            title: "CASUAL T_SHIRTS",
+            url: ""
+          },
+          {
+            title: "CASUAL T_SHIRTS",
+            url: ""
+          },
+          {
+            title: "CASUAL T_SHIRTS",
+            url: ""
+          },
+        ]
+      },
+    ]
+  },
+  {
+    title: "SHOP",
+    url: ""
+  },
+  {
+    title: "BLOG",
+    url: ""
+  },
+  {
+    title: "ABOUT US",
+    url: ""
+  },
+  {
+    title: "CONTACT US",
+    url: ""
+  },
+]
 
 export const imgPayCard = [imgVisa, imgPaypal, imgMsCard, imgAmricanEx];

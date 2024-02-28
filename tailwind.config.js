@@ -11,10 +11,10 @@ export default {
     },
     extend: {
       screens: {
-        sm: { min: '400px', max: '767px' },
-        md: { min: '768px', max: '991px' },
-        lg: { min: '992px', max: '1199px' },
-        xl: { min: '1200px' },
+        // sm: { min: '400px', max: '767px' },
+        // md: { min: '768px', max: '991px' },
+        // lg: { min: '992px', max: '1199px' },
+        // xl: { min: '1200px' },
       },
       colors: {
         'dark-1': 'rgb(0 0 0 / 15%)',
