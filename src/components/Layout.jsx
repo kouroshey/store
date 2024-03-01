@@ -2,13 +2,15 @@
 import React from 'react';
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
+import CardProduct from './common/CardProduct/CardProduct';
 
 // eslint-disable-next-line react/prop-types
 const Layout = ({ children }) => {
   return (
     <div className="bg-image bg-cover bg-no-repeat bg-center" style={{ backgroundImage: "url('./assets/mainBg.png')" }}>
+     
       <Header />
-      {children}
+      { <CardProduct />}
       <Footer />
     </div>
   );
