@@ -1,6 +1,9 @@
 import MainContainer from "../common/MainContainer"
 import { Link } from "react-router-dom"
 
+import arrowBottom from "/assets/arrow-bottom.svg"
+import um from "/assets/flags/um.svg"
+
 import { topbarItems, currencies, langs, socialMediaIcons } from "../../data"
 
 const TopBar = () => {
@@ -13,7 +16,7 @@ const TopBar = () => {
                     {/* START OF TOPBAR MENU */}
                     <ul className="hidden lg:flex gap-4">
                         {topbarItems.map((item, index) => (
-                            <li>
+                            <li key={index}>
                                 <Link to={item.url}>{item.title}</Link>
                             </li>
                         ))}
@@ -25,7 +28,7 @@ const TopBar = () => {
                             <li className="relative group py-4">
                                 <span className="flex gap-2 items-center">
                                     <a href="#">USD</a>
-                                    <img className='w-2' src="/public/assets/arrow-bottom.svg" alt="" srcset="" />
+                                    <img className='w-2' src={arrowBottom} alt="" />
                                 </span>
                                 <ul className="bg-dark-2 rounded-sm absolute justify-end w-24 hidden group-hover:block top-12 left-0 ">
                                     {currencies.map((item, index) => (
@@ -37,7 +40,7 @@ const TopBar = () => {
                             </li>
                             <li className="relative group py-4">
                                 <span className="flex gap-1 items-center">
-                                    <img src="/public/assets/flags/um.svg" className="w-4 h-min" alt="" />
+                                    <img src={um} className="w-4 h-min" alt="" />
                                     <a href="#">ENG</a>
                                 </span>
                                 <ul className="bg-dark-2 rounded-sm absolute justify-end left-0  w-32 hidden group-hover:block top-12">
