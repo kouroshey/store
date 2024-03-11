@@ -4,7 +4,6 @@ import Navbar from "./content/Navbar"
 import TopBar from "./content/TopBar"
 
 const Header = () => {
-    const [isMobileSize, setfirst] = useState(second)
     return (
         <header className="bg-dark-1">
             <TopBar />

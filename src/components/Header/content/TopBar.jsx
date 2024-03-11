@@ -13,7 +13,7 @@ const TopBar = () => {
                     {/* START OF TOPBAR MENU */}
                     <ul className="hidden lg:flex gap-4">
                         {topbarItems.map((item, index) => (
-                            <li>
+                            <li key={index}>
                                 <Link to={item.url}>{item.title}</Link>
                             </li>
                         ))}
@@ -25,7 +25,7 @@ const TopBar = () => {
                             <li className="relative group py-4">
                                 <span className="flex gap-2 items-center">
                                     <a href="#">USD</a>
-                                    <img className='w-2' src="/public/assets/arrow-bottom.svg" alt="" srcset="" />
+                                    <img className='w-2' src="/public/assets/arrow-bottom.svg" alt="" />
                                 </span>
                                 <ul className="bg-dark-2 rounded-sm absolute justify-end w-24 hidden group-hover:block top-12 left-0 ">
                                     {currencies.map((item, index) => (

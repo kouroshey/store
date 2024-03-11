@@ -9,7 +9,7 @@ const MainSection = () => {
                 {/* START OF LOGO */}
                 <div className="hidden lg:flex order-1">
                     <Link to={"/"}>
-                        <img src="/public/assets/logo-icon.png" className="w-28" alt="" srcset="" />
+                        <img src="/public/assets/logo-icon.png" className="w-28" alt="" />
                     </Link>
                 </div>
                 {/* END OF LOGO */}
@@ -42,7 +42,7 @@ const MainSection = () => {
                 <div className="w-full lg:w-max flex justify-between items-center order-1 lg:order-4">
                     {/* START OF MOBILE MENU ICON */}
                     <div className="lg:hidden">
-                        <img src="/public/assets/menu-icon.svg" className="w-5 hover:scale-105 cursor-pointer" alt="" srcset="" />
+                        <img src="/public/assets/menu-icon.svg" className="w-5 hover:scale-105 cursor-pointer" alt="" />
                     </div>
                     {/* END OF MOBILE MENU ICON */}
                     <div className="flex gap-4 items-center">
