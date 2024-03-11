@@ -1,8 +1,8 @@
 import './Footer.css';
 import { pTag, shopCategories, imgPayCard } from '../../data';
-import imgApple from '../../../public/assets/img/apple-store.png';
-import imgGoogelplay from '../../../public/assets/img/play-store.png';
-import arrowRight2 from '../../../public/assets/icons/icons8-forward-100.png';
+import imgApple from '/assets/img/apple-store.png';
+import imgGoogelplay from '/assets/img/play-store.png';
+import arrowRight2 from '/assets/icons/icons8-forward-100.png';
 import MainContainer from '../common/MainContainer';
 
 const Footer = () => {

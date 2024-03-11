@@ -1,85 +1,89 @@
-import imgVisa from './../public/assets/img/visa.png';
-import imgPaypal from './../public/assets/img/paypal.png';
-import imgMsCard from './../public/assets/img/mastercard.png';
-import imgAmricanEx from './../public//assets/img/american-express.png';
+import imgVisa from "/assets/img/visa.png";
+import imgPaypal from "/assets/img/paypal.png";
+import imgMsCard from "/assets/img/mastercard.png";
+import imgAmricanEx from "/assets/img/american-express.png";
+import engIcon from "/assets/flags/um.svg";
+import gerIcon from "/assets/flags/de.svg";
+import fraIcon from "/assets/flags/fr.svg";
+import facebookIcon from "/assets/icons/facebook.svg";
+import xIcon from "/assets/icons/X.svg";
+import linkedinIcon from "/assets/icons/linkedin.svg";
 
 export const pTag = [
-  'Cloths',
-  'Electronis',
-  'Furniture',
-  'Sports',
-  'Men Wear',
-  'Women Wear',
-  'Laptops',
-  'Formal Shirts',
-  'Topwear',
-  'Headphones',
-  'Bottom Wear',
-  'Bottom Wear',
-  'Sofa',
-  'Shoes',
+  "Cloths",
+  "Electronis",
+  "Furniture",
+  "Sports",
+  "Men Wear",
+  "Women Wear",
+  "Laptops",
+  "Formal Shirts",
+  "Topwear",
+  "Headphones",
+  "Bottom Wear",
+  "Bottom Wear",
+  "Sofa",
+  "Shoes",
 ];
 
 export const shopCategories = [
-  'Jeans',
-  'T-Shirts',
-  'Sports',
-  'Shirts & Tops',
-  'Clogs & Mules',
-  'Sunglasses',
-  'Bags & Wallets',
-  'Sneakers & Athletic',
-  'Electronis',
-  'Furniture',
+  "Jeans",
+  "T-Shirts",
+  "Sports",
+  "Shirts & Tops",
+  "Clogs & Mules",
+  "Sunglasses",
+  "Bags & Wallets",
+  "Sneakers & Athletic",
+  "Electronis",
+  "Furniture",
 ];
 
 export const topbarItems = [
   {
     title: "Track Order",
-    url: "order-tracking"
+    url: "order-tracking",
   },
   {
     title: "About",
-    url: "about-us"
+    url: "about-us",
   },
   {
     title: "Our Stores",
-    url: "shop-categories"
+    url: "shop-categories",
   },
   {
     title: "Blog",
-    url: "blog"
+    url: "blog",
   },
   {
     title: "Contact",
-    url: "contact-us"
+    url: "contact-us",
   },
   {
     title: "#",
-    url: "Help & FAQs"
+    url: "Help & FAQs",
   },
-]
+];
 
 export const langs = [
-  { name: "ENG", img: "/public/assets/flags/um.svg" },
-  { name: "GERMAN", img: "/public/assets/flags/de.svg" },
-  { name: "FRENCH", img: "/public/assets/flags/fr.svg" },
-]
+  { name: "ENG", img: engIcon },
+  { name: "GERMAN", img: gerIcon },
+  { name: "FRENCH", img: fraIcon },
+];
 
-export const currencies = [
-  "USD", "EUR"
-]
+export const currencies = ["USD", "EUR"];
 
 export const socialMediaIcons = [
-  { id: 1, name: "facebook", path: "/public/assets/icons/facebook.svg", url: "#" },
-  { id: 2, name: "X", path: "/public/assets/icons/X.svg", url: "#" },
-  { id: 3, name: "Linkedin", path: "/public/assets/icons/linkedin.svg", url: "#" },
-]
+  { id: 1, name: "facebook", path: facebookIcon, url: "#" },
+  { id: 2, name: "X", path: xIcon, url: "#" },
+  { id: 3, name: "Linkedin", path: linkedinIcon, url: "#" },
+];
 
 export const menuNavItems = [
   {
     title: "HOME",
-    url: ""
+    url: "",
   },
   {
     title: "CATEGORIES",
@@ -90,53 +94,53 @@ export const menuNavItems = [
         items: [
           {
             title: "CASUAL T_SHIRTS",
-            url: ""
+            url: "",
           },
           {
             title: "CASUAL T_SHIRTS",
-            url: ""
+            url: "",
           },
           {
             title: "CASUAL T_SHIRTS",
-            url: ""
+            url: "",
           },
-        ]
+        ],
       },
       {
         title: "FASHION",
         items: [
           {
             title: "CASUAL T_SHIRTS",
-            url: ""
+            url: "",
           },
           {
             title: "CASUAL T_SHIRTS",
-            url: ""
+            url: "",
           },
           {
             title: "CASUAL T_SHIRTS",
-            url: ""
+            url: "",
           },
-        ]
+        ],
       },
-    ]
+    ],
   },
   {
     title: "SHOP",
-    url: ""
+    url: "",
   },
   {
     title: "BLOG",
-    url: ""
+    url: "",
   },
   {
     title: "ABOUT US",
-    url: ""
+    url: "",
   },
   {
     title: "CONTACT US",
-    url: ""
+    url: "",
   },
-]
+];
 
 export const imgPayCard = [imgVisa, imgPaypal, imgMsCard, imgAmricanEx];
