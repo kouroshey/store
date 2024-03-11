@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import Header from './Header/Header';
@@ -33,6 +34,14 @@ const Layout = ({ children }) => {
         <ProductCardList />
       </div>
 
+      <div className="flex  mt-1 w-full justify-around mb-1">
+        <CardProduct />
+        <CardProduct />
+        <CardProduct />
+        <CardProduct />
+        <CardProduct />
+        <CardProduct />
+      </div>
       <Footer />
     </div>
   );
