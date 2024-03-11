@@ -1,7 +1,7 @@
-import MainContainer from "../common/MainContainer"
+import MainContainer from "../../common/MainContainer"
 import { Link } from "react-router-dom"
 
-import { topbarItems, currencies, langs, socialMediaIcons } from "../../data"
+import { topbarItems, currencies, langs, socialMediaIcons } from "../../../data"
 
 const TopBar = () => {
 

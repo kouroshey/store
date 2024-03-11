@@ -1,7 +1,7 @@
 import React from 'react'
-import MainContainer from '../common/MainContainer'
+import MainContainer from '../../common/MainContainer'
 import { Link } from 'react-router-dom'
-import { menuNavItems } from '../../data'
+import { menuNavItems } from '../../../data'
 
 const Navbar = () => {
     return (

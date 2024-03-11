@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import MainContainer from "../common/MainContainer"
+import MainContainer from "../../common/MainContainer"
 
 const MainSection = () => {
 
