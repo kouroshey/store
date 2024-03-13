@@ -1,6 +1,8 @@
 import React from 'react'
 import { menuNavItems } from '../../../data'
 import { Link } from 'react-router-dom'
+import closeIcon from "/assets/icons/close-icon.svg"
+import arrowBottom from "/assets/arrow-bottom.svg"
 
 const MobileNav = () => {
     return (
@@ -8,7 +10,7 @@ const MobileNav = () => {
             <nav className='bg-dark w-4/5 p-4 text-white flex flex-col gap-7'>
                 <div className='flex justify-between w-full'>
                     <span className='text-2xl'>Menu</span>
-                    <img className='w-4 cursor-pointer' src="/public/assets/icons/close-icon.svg" alt="" />
+                    <img className='w-4 cursor-pointer' src={closeIcon} alt="" />
                 </div>
                 <ul>
                     {menuNavItems.map((item, index) => (
@@ -17,7 +19,7 @@ const MobileNav = () => {
                             {item.children &&
                                 <>
                                     <div className='absolute right-0 align-middle group-hover:rotate-180 transition-all'>
-                                        <img className='w-3' src="/public/assets/arrow-bottom.svg" alt="" />
+                                        <img className='w-3' src={arrowBottom} alt="" />
                                     </div>
                                     <div className='bg-dark-2 p-4 hidden group-hover:flex gap-12'>
                                         {item.children.map((child, index) => (
