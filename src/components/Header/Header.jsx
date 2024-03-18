@@ -1,6 +1,7 @@
-import MainSection from "./MainSection"
-import Navbar from "./Navbar"
-import TopBar from "./TopBar"
+import MainSection from "./content/MainSection"
+import MobileNav from "./content/MobileNavbar"
+import Navbar from "./content/Navbar"
+import TopBar from "./content/TopBar"
 
 const Header = () => {
     return (
@@ -10,7 +11,7 @@ const Header = () => {
                 <MainSection />
             </div>
             <Navbar />
-
+            <MobileNav />
         </header>
     )
 }

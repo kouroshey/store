@@ -11,6 +11,7 @@ export default {
     },
     extend: {
       colors: {
+        'dark': '#212529',
         'dark-1': 'rgb(0 0 0 / 15%)',
         'dark-2': 'rgb(30 30 30 / 90%)',
         'border-1': 'rgb(255 255 255 / 15%)',

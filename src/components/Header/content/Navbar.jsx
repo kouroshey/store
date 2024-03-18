@@ -1,8 +1,7 @@
 import React from 'react'
-import MainContainer from '../common/MainContainer'
+import MainContainer from '../../common/MainContainer'
 import { Link } from 'react-router-dom'
-import { menuNavItems } from '../../data'
-import arrowBottomIcon from "/assets/arrow-bottom.svg"
+import { menuNavItems } from '../../../data'
 
 const Navbar = () => {
     return (
@@ -15,7 +14,7 @@ const Navbar = () => {
                             {item.children &&
                                 <>
                                     <span>
-                                        <img className='w-2' src={arrowBottomIcon} alt="" />
+                                        <img className='w-2' src="/public/assets/arrow-bottom.svg" alt="" />
                                     </span>
                                     <div className='bg-dark-2 p-4 absolute top-12 group-hover:flex hidden gap-12'>
                                         {item.children.map((child, index) => (

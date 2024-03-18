@@ -61,8 +61,8 @@ export const topbarItems = [
     url: "contact-us",
   },
   {
-    title: "#",
-    url: "Help & FAQs",
+    title: "Help & FAQs",
+    url: "#",
   },
 ];
 
