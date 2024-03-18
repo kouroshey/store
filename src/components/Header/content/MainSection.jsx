@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom"
 import MainContainer from "../../common/MainContainer"
 
-const MainSection = () => {
-
+const MainSection = ({ navShowHandler, isNavbarShow }) => {
+    const toggleMenuNav = () => {
+        navShowHandler()
+    }
     return (
         <MainContainer>
             <section className="py-4 gap-4 lg:gap-12 flex flex-col lg:flex-row justify-between w-full">
@@ -38,13 +40,17 @@ const MainSection = () => {
                     </div>
                 </div>
                 {/* END OF CALL US NOW SECTION */}
-                {/* START OF RIGHT SECTION ICONS */}
                 <div className="w-full lg:w-max flex justify-between items-center order-1 lg:order-4">
                     {/* START OF MOBILE MENU ICON */}
                     <div className="lg:hidden">
-                        <img src="/public/assets/menu-icon.svg" className="w-5 hover:scale-105 cursor-pointer" alt="" />
+                        <img
+                            onClick={toggleMenuNav}
+                            src="/public/assets/menu-icon.svg"
+                            className="w-5 hover:scale-105 cursor-pointer"
+                            alt="menu-icon" />
                     </div>
                     {/* END OF MOBILE MENU ICON */}
+                    {/* START OF RIGHT SECTION ICONS */}
                     <div className="flex gap-4 items-center">
                         <span><img className="w-6" src="/public/assets/icons/user.svg" /></span>
                         <span><img className="w-6" src="/public/assets/icons/heart.svg" /></span>
@@ -53,8 +59,8 @@ const MainSection = () => {
                             <span className="absolute -top-1 -right-2 bg-dark-2 rounded-[50%] w-5 text-center text-white text-sm">6</span>
                         </span>
                     </div>
+                    {/* END OF RIGHT SECTION ICONS */}
                 </div>
-                {/* END OF RIGHT SECTION ICONS */}
             </section>
         </MainContainer>
     )

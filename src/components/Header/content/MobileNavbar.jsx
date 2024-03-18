@@ -1,16 +1,22 @@
-import React from 'react'
 import { menuNavItems } from '../../../data'
 import { Link } from 'react-router-dom'
 import closeIcon from "/assets/icons/close-icon.svg"
 import arrowBottom from "/assets/arrow-bottom.svg"
 
-const MobileNav = () => {
+const MobileNav = ({ navShowHandler, isNavbarShow }) => {
+    const toggleMenuNav = () => {
+        navShowHandler()
+    }
     return (
-        <div className='lg:hidden flex bg-dark-1 fixed top-0 left-0 h-screen w-screen'>
+        <div className={` ${isNavbarShow ? "bg-dark-1 backdrop-blur-sm translate-x-0" : '-translate-x-full'} flex transition-all ease-in-out duration-500 fixed top-0 h-screen w-screen z-50 `}>
             <nav className='bg-dark w-4/5 p-4 text-white flex flex-col gap-7'>
                 <div className='flex justify-between w-full'>
                     <span className='text-2xl'>Menu</span>
-                    <img className='w-4 cursor-pointer' src={closeIcon} alt="" />
+                    <img
+                        className='w-4 cursor-pointer'
+                        onClick={toggleMenuNav}
+                        src={closeIcon}
+                        alt="close-icon" />
                 </div>
                 <ul>
                     {menuNavItems.map((item, index) => (
