@@ -18,9 +18,13 @@ const MobileNav = ({ navShowHandler, isNavbarShow }) => {
                         src={closeIcon}
                         alt="close-icon" />
                 </div>
-                <ul>
+                <ul >
                     {menuNavItems.map((item, index) => (
-                        <li key={index} className='flex gap-2 group py-4 relative items-start flex-col'>
+                        <li
+                            key={index}
+                            onClick={toggleMenuNav}
+                            className='flex gap-2 group py-4 relative items-start flex-col'
+                        >
                             <Link to={"#"}>{item.title}</Link>
                             {item.children &&
                                 <>
