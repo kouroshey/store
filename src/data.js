@@ -8,6 +8,9 @@ import fraIcon from "/assets/flags/fr.svg";
 import facebookIcon from "/assets/icons/facebook.svg";
 import xIcon from "/assets/icons/X.svg";
 import linkedinIcon from "/assets/icons/linkedin.svg";
+import slide1 from "/assets/img/main-slider/03.png";
+import slide2 from "/assets/img/main-slider/04.png";
+import slide3 from "/assets/img/main-slider/05.png";
 
 export const pTag = [
   "Cloths",
@@ -144,3 +147,30 @@ export const menuNavItems = [
 ];
 
 export const imgPayCard = [imgVisa, imgPaypal, imgMsCard, imgAmricanEx];
+
+export const mainSliderDatas = [
+  {
+    id: "1",
+    img: slide1,
+    title: "Complete your look with",
+    subTitle: "New Men's Accessories",
+    desc: "Hats & Caps, Sunglasses, Bags & much more...",
+    url: "",
+  },
+  {
+    id: "2",
+    img: slide2,
+    title: "Has just arrived!",
+    subTitle: "Huge Summer Collection",
+    desc: "Swimwear, Tops, Shorts, Sunglasses & much more...",
+    url: "",
+  },
+  {
+    id: "3",
+    img: slide3,
+    title: "Hurry up! Limited time offer.",
+    subTitle: "Women Sportswear Sale",
+    desc: "Sneakers, Keds, Sweatshirts, Hoodies & much more...",
+    url: "",
+  },
+];

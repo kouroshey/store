@@ -2,7 +2,8 @@ import React from 'react';
 import './CardProduct.css';
 import { RiRefreshLine } from 'react-icons/ri';
 import { FaRegHeart, FaStar, FaRegStar } from 'react-icons/fa';
-import ImageProduct from '..//..//../assets/images/02.png';
+import ImageProduct from "../../../../public/assets/img/featured-products/02.png"
+
 import { FaCartShopping } from 'react-icons/fa6';
 import { FiZoomIn } from 'react-icons/fi';
 import { Button } from '../Button';

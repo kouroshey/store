@@ -12,7 +12,6 @@ export default function useWidth() {
   // resize widnow size and set width by useMemo
   useMemo(() => {
     const handleResize = () => {
-      console.log(breakpoints);
       setWidth(window.innerWidth);
     };
     window.addEventListener("resize", handleResize);

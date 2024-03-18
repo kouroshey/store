@@ -1,5 +1,6 @@
 import React from 'react';
-import imgSample from '../../../assets/images/02.png';
+import imgSample from "../../../../public/assets/img/featured-products/02.png"
+
 const CardCategory = () => {
   return (
     <div>

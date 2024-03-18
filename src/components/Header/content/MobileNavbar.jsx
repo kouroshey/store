@@ -7,13 +7,26 @@ const MobileNav = ({ navShowHandler, isNavbarShow }) => {
     const toggleMenuNav = () => {
         navShowHandler()
     }
+
+    const clickOnBgHandler = (e) => {
+        if (e.target.id === "main-mobile-nav-bg") {
+            navShowHandler()
+        }
+    }
     return (
-        <div className={` ${isNavbarShow ? "bg-dark-1 backdrop-blur-sm translate-x-0" : '-translate-x-full'} flex transition-all ease-in-out duration-500 fixed top-0 h-screen w-screen z-50 `}>
-            <nav className='bg-dark w-4/5 p-4 text-white flex flex-col gap-7'>
+        <div
+            id='main-mobile-nav-bg'
+            className={`
+             ${isNavbarShow ? "bg-dark-1 backdrop-blur-sm translate-x-0" : '-translate-x-full'} 
+             flex transition-all ease-in-out duration-500 fixed top-0 h-screen w-screen z-50
+             `}
+            onClick={(e) => clickOnBgHandler(e)}
+        >
+            <nav className='bg-dark w-4/5 p-4 text-white flex flex-col gap-7 delay-1000'>
                 <div className='flex justify-between w-full'>
                     <span className='text-2xl'>Menu</span>
                     <img
-                        className='w-4 cursor-pointer'
+                        className='w-4 cursor-pointer text-white'
                         onClick={toggleMenuNav}
                         src={closeIcon}
                         alt="close-icon" />
