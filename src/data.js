@@ -11,6 +11,9 @@ import linkedinIcon from "/assets/icons/linkedin.svg";
 import slide1 from "/assets/img/main-slider/03.png";
 import slide2 from "/assets/img/main-slider/04.png";
 import slide3 from "/assets/img/main-slider/05.png";
+import icon1 from "/assets/icons/car.svg";
+import icon2 from "/assets/icons/dollar.svg";
+import icon3 from "/assets/icons/headset.svg";
 
 export const pTag = [
   "Cloths",
@@ -175,5 +178,26 @@ export const mainSliderDatas = [
     desc: "Sneakers, Keds, Sweatshirts, Hoodies & much more...",
     url: "/",
     buttonStyle: "white",
+  },
+];
+
+export const firstIconBoxesData = [
+  {
+    id: "1",
+    title: "FREE SHIPPING & RETURN",
+    subtitle: "Free shipping on all orders over $49",
+    icon: icon1,
+  },
+  {
+    id: "2",
+    title: "MONEY BACK GUARANTEE",
+    subtitle: "100% money back guarantee",
+    icon: icon2,
+  },
+  {
+    id: "3",
+    title: "ONLINE SUPPORT 24/7",
+    subtitle: "Awesome Support for 24/7 Days",
+    icon: icon3,
   },
 ];

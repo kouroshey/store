@@ -3,14 +3,14 @@ import CardCategory from '../components/common/CardCategory';
 import ProductCardList from '../components/common/ProductCardList';
 import ImageSlider from '../components/common/ImageSlider/ImageSlider';
 import MainContainer from '../components/common/MainContainer';
-import IconBox from '../components/common/IconBox';
+import FirstIconBoxes from '../components/Home/FirstIconBoxes';
 
 const Home = () => {
     return (
         <main className='flex flex-col gap-12'>
             <ImageSlider />
+            <FirstIconBoxes />
             <MainContainer>
-                <IconBox />
                 <div className="flex w-full justify-around">
                     {<CardCategory />}
                 </div>
