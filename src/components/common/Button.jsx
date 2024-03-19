@@ -1,17 +1,66 @@
-import React, { useEffect, useRef } from 'react';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
-export const Button = ({ textBtn, iconBtn, btnEffect }) => {
-  const refElem = useRef();
-  useEffect(() => {
-    btnEffect
-      ? refElem.current.classList.add('bg-[#dedede3c]', 'border-[#ffffff3d]', 'border-[1px]', 'hover:bg-[#dedede6a]')
-      : refElem.current.classList.add('hover:text-white');
-  }, []);
+export const Button = ({
+  buttonStyle,
+  customStyle,
+  text,
+  icon,
+  effect,
+  isLink,
+  btnUrl
+}) => {
+
+  const style = {
+    dark: "bg-dark text-white border-black",
+    transparent: "bg-white bg-opacity-10",
+    white: "bg-white text-black",
+    default: "font-semibold flex gap-2 items-center hover:bg-red-500 border text-xs w-max focus:outline-md focus:outline-white cursor-pointer"
+  }
+
+  const mainButton = (
+    <button
+      className={`
+      ${buttonStyle === "dark" && style.dark ||
+        buttonStyle === "transparent" && style.transparent ||
+        buttonStyle === "white" && style.white} 
+        ${customStyle && customStyle}
+        ${style.default}
+              `}
+    >
+      <span>
+        {text && text}
+      </span>
+      {icon && <img src={icon} />}
+    </button>
+  )
 
   return (
-    <div ref={refElem} className=" flex items-center gap-2  justify-center py-[0.4rem] cursor-pointer ">
-      <div className="text-[0.55rem]">{iconBtn}</div>
-      <div className="text-[0.55rem]">{textBtn}</div>
-    </div>
-  );
+    <button
+      className={`
+      ${buttonStyle === "dark" && style.dark ||
+        buttonStyle === "transparent" && style.transparent ||
+        buttonStyle === "white" && style.white} 
+        ${customStyle && customStyle}
+        ${style.default}
+              `}
+    >
+
+      {
+        isLink ?
+          <Link className='px-8 py-3' to={btnUrl}>
+            <span>
+              {text && text}
+            </span>
+            {icon && <img src={icon} />}
+          </Link> :
+          <>
+            <span className='px-8 py-3'>
+              {text && text}
+            </span>
+            {icon && <img src={icon} />}
+          </>
+      }
+    </button>
+  )
 };

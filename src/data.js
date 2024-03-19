@@ -155,7 +155,8 @@ export const mainSliderDatas = [
     title: "Complete your look with",
     subTitle: "New Men's Accessories",
     desc: "Hats & Caps, Sunglasses, Bags & much more...",
-    url: "",
+    url: "/",
+    buttonStyle: "dark",
   },
   {
     id: "2",
@@ -163,7 +164,8 @@ export const mainSliderDatas = [
     title: "Has just arrived!",
     subTitle: "Huge Summer Collection",
     desc: "Swimwear, Tops, Shorts, Sunglasses & much more...",
-    url: "",
+    url: "/",
+    buttonStyle: "transparent",
   },
   {
     id: "3",
@@ -171,6 +173,7 @@ export const mainSliderDatas = [
     title: "Hurry up! Limited time offer.",
     subTitle: "Women Sportswear Sale",
     desc: "Sneakers, Keds, Sweatshirts, Hoodies & much more...",
-    url: "",
+    url: "/",
+    buttonStyle: "white",
   },
 ];

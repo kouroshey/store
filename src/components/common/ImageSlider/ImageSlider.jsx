@@ -14,13 +14,14 @@ const ImageSlider = () => {
       title={slide.title}
       subtitle={slide.subTitle}
       desc={slide.desc}
-      url={slide.url}
+      btnUrl={slide.url}
       img={slide.img}
+      buttonStyle={slide.buttonStyle}
     />
   ))
 
   return (
-    <div className=" h-96 w-full ">
+    <div className="w-full">
       <Carousel slides={slides} />
     </div>
   );
