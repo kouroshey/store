@@ -1,5 +1,3 @@
-import React from 'react';
-import './CardProduct.css';
 import { RiRefreshLine } from 'react-icons/ri';
 import { FaRegHeart, FaStar, FaRegStar } from 'react-icons/fa';
 import ImageProduct from "../../../../public/assets/img/featured-products/02.png"
@@ -9,7 +7,7 @@ import { FiZoomIn } from 'react-icons/fi';
 import { Button } from '../Button';
 const CardProduct = () => {
   return (
-    <div className=" w-56 flex flex-col py-2 px-3 gap-2  hover:bg-dark-1 h-[335px] [&>:nth-child(4)]:hover:flex [&>:nth-child(1)>:nth-child(1)]:hover:flex hover:shadow-lg">
+    <div className=" w-56 flex flex-col py-2 px-3 gap-2  hover:bg-dark-1 [&>:nth-child(4)]:hover:flex [&>:nth-child(1)>:nth-child(1)]:hover:flex hover:shadow-lg">
       {/* LIKE AND COMPIRE ------------------------------------*/}
       <div className="flex gap-3 justify-end  ">
         <div className="  transition-all items-center text-[0.6rem] gap-1 hidden hover:text-white cursor-pointer  [&>:nth-child(1)]:hover:rotate-90  ">
@@ -50,8 +48,8 @@ const CardProduct = () => {
       </div>
       {/* BUTTON  ------------------------------------**/}
       <div className="= flex-col gap-2 hidden transition-all">
-        <Button iconBtn={<FaCartShopping />} textBtn={'Add to Cart'} btnEffect={true} />
-        <Button iconBtn={<FiZoomIn />} textBtn={'Quick View'} btnEffect={false} />
+        <Button buttonStyle={"transparent"} iconBtn={<FaCartShopping />} text={'Add to Cart'} btnEffect={true} />
+        <Button buttonStyle={"transparent"} iconBtn={<FiZoomIn />} text={'Quick View'} btnEffect={false} />
       </div>
     </div>
   );
