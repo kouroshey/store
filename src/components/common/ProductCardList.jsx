@@ -1,7 +1,6 @@
 import React from 'react';
 import { FaRegHeart, FaStar, FaRegStar } from 'react-icons/fa';
-// import imgSample from '../../../assets/images/02.png';
-import imgSample from "../../../../public/assets/img/featured-products/02.png"
+import imgSample from "../../../public/assets/img/featured-products/02.png"
 
 const ProductCardList = () => {
   return (

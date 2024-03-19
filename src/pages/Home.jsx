@@ -1,14 +1,16 @@
-import CardProduct from '../components/common/CardProduct/CardProduct';
-import CardCategory from '../components/common/CardCategory/CardCategory';
-import ProductCardList from '../components/common/ProductCardList/ProductCardList';
+import CardProduct from '../components/common/CardProduct';
+import CardCategory from '../components/common/CardCategory';
+import ProductCardList from '../components/common/ProductCardList';
 import ImageSlider from '../components/common/ImageSlider/ImageSlider';
 import MainContainer from '../components/common/MainContainer';
+import IconBox from '../components/common/IconBox';
 
 const Home = () => {
     return (
         <main className='flex flex-col gap-12'>
             <ImageSlider />
             <MainContainer>
+                <IconBox />
                 <div className="flex w-full justify-around">
                     {<CardCategory />}
                 </div>

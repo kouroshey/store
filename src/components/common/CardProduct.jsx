@@ -1,10 +1,10 @@
 import { RiRefreshLine } from 'react-icons/ri';
 import { FaRegHeart, FaStar, FaRegStar } from 'react-icons/fa';
-import ImageProduct from "../../../../public/assets/img/featured-products/02.png"
+import ImageProduct from "../../../public/assets/img/featured-products/02.png"
 
 import { FaCartShopping } from 'react-icons/fa6';
 import { FiZoomIn } from 'react-icons/fi';
-import { Button } from '../Button';
+import { Button } from './Button';
 const CardProduct = () => {
   return (
     <div className=" w-56 flex flex-col py-2 px-3 gap-2  hover:bg-dark-1 [&>:nth-child(4)]:hover:flex [&>:nth-child(1)>:nth-child(1)]:hover:flex hover:shadow-lg">
