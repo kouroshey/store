@@ -14,6 +14,9 @@ import slide3 from "/assets/img/main-slider/05.png";
 import icon1 from "/assets/icons/car.svg";
 import icon2 from "/assets/icons/dollar.svg";
 import icon3 from "/assets/icons/headset.svg";
+import wearKind1 from "/assets/img/wear-kind/01.png";
+import wearKind2 from "/assets/img/wear-kind/02.png";
+import wearKind3 from "/assets/img/wear-kind/03.png";
 
 export const pTag = [
   "Cloths",
@@ -199,5 +202,29 @@ export const firstIconBoxesData = [
     title: "ONLINE SUPPORT 24/7",
     subtitle: "Awesome Support for 24/7 Days",
     icon: icon3,
+  },
+];
+
+export const wearKindsData = [
+  {
+    id: "1",
+    title: "MEN'S WEAR",
+    subtitle: "STARTING AT 9$",
+    img: wearKind1,
+    url: "",
+  },
+  {
+    id: "2",
+    title: "WOMEN'S WEAR",
+    subtitle: "STARTING AT 12$",
+    img: wearKind2,
+    url: "",
+  },
+  {
+    id: "3",
+    title: "KID'S WEAR",
+    subtitle: "STARTING AT 5$",
+    img: wearKind3,
+    url: "",
   },
 ];
