@@ -29,7 +29,7 @@ export default function Carousel({ slides }) {
     <div
       onMouseEnter={hoverHandler}
       onMouseLeave={hoverHandler}
-      className="overflow-hidden grid grid-cols-[repeat(20,100%)] relative "
+      className="overflow-hidden grid grid-cols-[repeat(20,100%)] relative py-8"
     >
       {/* START OF SLIDES */}
       {slides.map((item, index) => (
@@ -45,10 +45,10 @@ export default function Carousel({ slides }) {
       {/* END OF SLIDES */}
       {/* start of slider navigation buttons */}
       <div className="top-0 absolute flex  w-full justify-between text-2xl  h-full  items-center">
-        <button className="h-full w-28 flex justify-center items-center " onClick={preImag}>
+        <button className="h-max w-28 flex justify-center items-center " onClick={preImag}>
           <FaChevronLeft />
         </button>
-        <button className="h-full w-28 flex justify-center items-center " onClick={nextImag}>
+        <button className="h-max w-28 flex justify-center items-center " onClick={nextImag}>
           <FaChevronRight />
         </button>
       </div>
