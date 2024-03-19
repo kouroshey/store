@@ -6,7 +6,7 @@ import MainContainer from '../components/common/MainContainer';
 
 const Home = () => {
     return (
-        <main>
+        <main className='flex flex-col gap-12'>
             <ImageSlider />
             <MainContainer>
                 <div className="flex w-full justify-around">

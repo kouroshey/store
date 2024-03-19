@@ -15,7 +15,7 @@ export const Button = ({
     dark: "bg-dark text-white border-black",
     transparent: "bg-white bg-opacity-10",
     white: "bg-white text-black",
-    default: "font-semibold flex gap-2 items-center hover:bg-red-500 border text-xs w-max focus:outline-md focus:outline-white cursor-pointer"
+    default: "font-semibold flex gap-2 items-center hover:bg-red-500 border text-xs w-full justify-center focus:outline-md focus:outline-white cursor-pointer"
   }
 
   const mainButton = (
@@ -24,8 +24,8 @@ export const Button = ({
       ${buttonStyle === "dark" && style.dark ||
         buttonStyle === "transparent" && style.transparent ||
         buttonStyle === "white" && style.white} 
-        ${customStyle && customStyle}
         ${style.default}
+        ${customStyle && customStyle}
               `}
     >
       <span>
