@@ -3,8 +3,8 @@ import CardCategory from '../components/common/CardCategory';
 import ProductCardList from '../components/common/ProductCardList';
 import ImageSlider from '../components/common/ImageSlider/ImageSlider';
 import FirstIconBoxes from '../components/Home/FirstIconBoxes';
-import WearKind from '../components/common/WearKind';
 import WearKinds from '../components/Home/WearKinds';
+import Arrivals from '../components/Home/Arrivals';
 
 const Home = () => {
     return (
@@ -12,6 +12,7 @@ const Home = () => {
             <ImageSlider />
             <FirstIconBoxes />
             <WearKinds />
+            <Arrivals />
             <div className="flex w-full justify-around">
                 {<CardCategory />}
             </div>
