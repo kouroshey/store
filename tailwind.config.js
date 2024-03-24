@@ -15,7 +15,9 @@ export default {
         "dark-1": "rgb(0 0 0 / 15%)",
         "dark-2": "rgb(30 30 30 / 90%)",
         "dark-3": "rgb(0 0 0 / 65%)",
+        "dark-4": "rgb(0 0 0 / 20%)",
         "border-1": "rgb(255 255 255 / 15%)",
+        "white-transparent": "rgb(255 255 255 / 12%)",
       },
       fontFamily: {
         Roboto: ["Roboto", "sans-serif"],
