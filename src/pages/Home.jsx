@@ -19,15 +19,9 @@ const Home = () => {
 
             <div className="flex mt-1 w-full justify-around mb-1">
                 <ProductCardList />
-                <ProductCardList />
             </div>
 
             <div className="flex  mt-1 w-full justify-around mb-1">
-                <CardProduct />
-                <CardProduct />
-                <CardProduct />
-                <CardProduct />
-                <CardProduct />
                 <CardProduct />
             </div>
         </main>
