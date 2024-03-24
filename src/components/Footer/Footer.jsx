@@ -73,7 +73,6 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        {/* HR LINE ------------------------------------ */}
         <div className="flex-grow border-t border-[#ffffff4a] mt-4 mb-4"></div>
         <div className="flex flex-col gap-5 place-items-center   ">
           <p className="text-sm">Copyright © 2021. All right reserved.</p>
