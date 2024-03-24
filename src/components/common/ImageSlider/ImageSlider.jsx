@@ -8,7 +8,7 @@ import { mainSliderDatas } from '../../../data';
 
 const ImageSlider = () => {
   // const slides = [<CardSlide />, <CardSlide />, <CardSlide />, , <CardSlide />, <CardSlide />, <CardSlide />];
-  const slides = mainSliderDatas.map(slide => (
+  const slides = mainSliderDatas.map((slide) => (
     <CardSlide
       key={slide.id}
       title={slide.title}
@@ -18,7 +18,7 @@ const ImageSlider = () => {
       img={slide.img}
       buttonStyle={slide.buttonStyle}
     />
-  ))
+  ));
 
   return (
     <div className="w-full">

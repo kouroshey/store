@@ -1,11 +1,11 @@
 import React from 'react';
 import { FaRegHeart, FaStar, FaRegStar } from 'react-icons/fa';
-import imgSample from "../../../public/assets/img/featured-products/02.png"
+import imgSample from '../../../public/assets/img/featured-products/02.png';
 
 const ProductCardList = () => {
   return (
     <div>
-      <div className="flex flex-row h-28 p-3 bg-dark-1 w-[22rem] border-b-2 border-[#b8c2d96b]">
+      <div className="flex flex-row h-28 py-2   ">
         <div>
           <img className="h-24" src={imgSample} alt="" />
         </div>
@@ -18,7 +18,7 @@ const ProductCardList = () => {
             <FaStar />
             <FaStar />
           </div>
-          <div className='font-semibold text-slate-100'>$59.00</div>
+          <div className="font-semibold text-slate-100">$59.00</div>
         </div>
       </div>
     </div>

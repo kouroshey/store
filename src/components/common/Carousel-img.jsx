@@ -3,12 +3,12 @@ import { FaChevronLeft } from 'react-icons/fa';
 import { FaChevronRight } from 'react-icons/fa';
 
 export default function Carousel({ slides }) {
-  const [isHover, setIsHover] = useState(false)
+  const [isHover, setIsHover] = useState(false);
   const [curr, setCurr] = useState(0);
 
   const hoverHandler = () => {
-    setIsHover(prev => !prev)
-  }
+    setIsHover((prev) => !prev);
+  };
 
   const preImag = () => {
     return setCurr((curr) => (curr === 0 ? slides.length - 1 : curr - 1));
@@ -24,13 +24,9 @@ export default function Carousel({ slides }) {
       return () => clearInterval(slideInter);
     }
   }, [isHover]);
-
   return (
-    <div
-      onMouseEnter={hoverHandler}
-      onMouseLeave={hoverHandler}
-      className="overflow-hidden grid grid-cols-[repeat(20,100%)] relative py-8"
-    >
+    // ----------------------------JSX-------------------------------
+    <div onMouseEnter={hoverHandler} onMouseLeave={hoverHandler} className="overflow-hidden grid grid-cols-[repeat(20,100%)] relative  ">
       {/* START OF SLIDES */}
       {slides.map((item, index) => (
         <div
@@ -40,15 +36,16 @@ export default function Carousel({ slides }) {
         >
           {item}
         </div>
-      )
-      )}
+      ))}
       {/* END OF SLIDES */}
       {/* start of slider navigation buttons */}
-      <div className="top-0 absolute flex  w-full justify-between text-2xl  h-full  items-center">
-        <button className="h-max w-28 flex justify-center items-center " onClick={preImag}>
+      <div className="top-0 absolute flex  w-full justify-between text-2xl  h-full   items-center">
+        {/* -----------BUTTON PREV SLIDE--------------------------------- */}
+        <button className="h-full w-28 flex justify-center items-center " onClick={preImag}>
           <FaChevronLeft />
         </button>
-        <button className="h-max w-28 flex justify-center items-center " onClick={nextImag}>
+        {/* -----------BUTTON NEXT SLIDE--------------------------------- */}
+        <button className="h-full w-28 flex justify-center items-center " onClick={nextImag}>
           <FaChevronRight />
         </button>
       </div>
