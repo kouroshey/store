@@ -3,7 +3,7 @@ import img1 from "/assets/img/new-arrivals/04.png"
 
 const FirstArrival = () => {
     return (
-        <div className="w-full max-w-[25rem] h-full">
+        <div className="w-full max-w-[25rem] md:max-w-96 xl:max-w-64 h-full">
             <div className="bg-dark-1 flex flex-col">
                 <img src={img1} alt="" className="w-full" />
                 <div className="flex flex-col gap-2 p-4">
