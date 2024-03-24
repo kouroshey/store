@@ -18,6 +18,7 @@ const Home = () => {
       <FeaturedProduct title={'FEATURED PRODUCTS'} titleBtn={'More Product'} />
       <NewProduct title={'FEATURED PRODUCTS'} titleBtn={'More Product'} />
 
+<<<<<<< HEAD
       <Arrivals />
       <div className="flex w-full justify-around">{<CardCategory />}</div>
 
@@ -30,5 +31,17 @@ const Home = () => {
     </main>
   );
 };
+=======
+            <div className="flex mt-1 w-full justify-around mb-1">
+                <ProductCardList />
+            </div>
+
+            <div className="flex  mt-1 w-full justify-around mb-1">
+                <CardProduct />
+            </div>
+        </main>
+    )
+}
+>>>>>>> be0f662b34f76732a469a5eb3226ce71808b6e20
 
 export default Home;

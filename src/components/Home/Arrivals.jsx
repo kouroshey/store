@@ -7,11 +7,14 @@ import MainContainer from "../common/MainContainer"
 const Arrivals = () => {
     return (
         <MainContainer>
-            <section className="flex justify-between h-[30rem]">
+            <section className="flex flex-col gap-4 items-center md:flex-row flex-wrap justify-center">
                 <FirstArrival />
-                <SecondArrival />
+                <FirstArrival />
+                <FirstArrival />
+                <FirstArrival />
+                {/* <SecondArrival />
                 <ThirdArrival />
-                <FourthArrival />
+                <FourthArrival /> */}
             </section>
         </MainContainer>
     )
