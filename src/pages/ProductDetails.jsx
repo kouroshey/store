@@ -7,6 +7,7 @@ import { AiOutlineYoutube } from 'react-icons/ai';
 import Tab from '../components/common/Tab/Tab';
 
 import { Button } from '../components/common/Button';
+import BreadCrumb from '../components/BreadCrumb';
 
 export const ProductDetails = () => {
   return (
@@ -16,7 +17,7 @@ export const ProductDetails = () => {
           {/* HEADER AND ROUTER------------------------------------------- ------------------*/}
           <div className="flex justify-between border-b border-[#e9e8e82e] py-4">
             <p>Allen Solly Men's Polo T-Shirt</p>
-            <p> Home Shop Product Details</p>
+            <BreadCrumb />
           </div>
 
           <div>

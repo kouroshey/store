@@ -2,6 +2,7 @@ import React from 'react'
 import MainContainer from '../../common/MainContainer'
 import { Link } from 'react-router-dom'
 import { menuNavItems } from '../../../data'
+import buttomArrowIcon from "../../../../public/assets/arrow-bottom.svg"
 
 const Navbar = () => {
     return (
@@ -14,7 +15,7 @@ const Navbar = () => {
                             {item.children &&
                                 <>
                                     <span>
-                                        <img className='w-2' src="/public/assets/arrow-bottom.svg" alt="" />
+                                        <img className='w-2' src={buttomArrowIcon} alt="" />
                                     </span>
                                     <div className='bg-dark-2 p-4 absolute top-12 group-hover:flex hidden gap-12'>
                                         {item.children.map((child, index) => (

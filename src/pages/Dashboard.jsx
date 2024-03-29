@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import MainContainer from '../components/common/MainContainer'
 import { dashboardTabs } from '../data'
+import BreadCrump from '../components/BreadCrumb'
 
 const Dashboard = () => {
     const [shownTab, setShownTab] = useState(dashboardTabs[0])
@@ -33,7 +34,7 @@ const Dashboard = () => {
                 <MainContainer>
                     <div className='flex justify-between py-8'>
                         <h2 className='border-r border-border-1 pr-4'>Dashboard</h2>
-                        <span>path</span>
+                        <BreadCrump />
                     </div>
                 </MainContainer>
             </div>
