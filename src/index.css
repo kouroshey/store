@@ -13,7 +13,7 @@
   body {
     background-color: rgb(35, 35, 35);
     color: rgb(255 255 255 / 70%);
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
   }
 }
 
@@ -24,7 +24,9 @@
 }
 
 @layer components {
-  .btncal {
-    @apply bg-slate-400 flex justify-center text-[#3a3a3a] p-2 hover:bg-slate-600  cursor-pointer active:bg-green-500;
+  @layer tab {
+    .btnanim {
+      background-color: blue;
+    }
   }
 }
