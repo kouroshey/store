@@ -7,7 +7,7 @@ import MainContainer from "../common/MainContainer"
 const Arrivals = () => {
     return (
         <MainContainer>
-            <section className="flex flex-col gap-4 items-center md:flex-row flex-wrap justify-center">
+            <section className="flex flex-col gap-4 xl:gap-0 items-center md:flex-row flex-wrap justify-between">
                 <FirstArrival />
                 <FirstArrival />
                 <FirstArrival />

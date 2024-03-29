@@ -17,6 +17,19 @@ import icon3 from "/assets/icons/headset.svg";
 import wearKind1 from "/assets/img/wear-kind/01.png";
 import wearKind2 from "/assets/img/wear-kind/02.png";
 import wearKind3 from "/assets/img/wear-kind/03.png";
+import DashboardTab from "./components/Dashboard/DashboardTab";
+import Orders from "./components/Dashboard/Orders";
+import Downloads from "./components/Dashboard/Downloads";
+import Addresses from "./components/Dashboard/Addresses";
+import PaymentMethods from "./components/Dashboard/PaymentMethods";
+import AccountDetails from "./components/Dashboard/AccountDetails";
+import speedMeterIcon from "/assets/icons/speedmeter.svg"
+import cartIcon from "/assets/icons/cart.svg"
+import creditCardIcon from "/assets/icons/credit-card.svg"
+import downloadIcon from "/assets/icons/downloads.svg"
+import homeIcon from "/assets/icons/home.svg"
+import logoutIcon from "/assets/icons/logout.svg"
+import personIcon from "/assets/icons/person.svg"
 
 export const pTag = [
   "Cloths",
@@ -226,5 +239,50 @@ export const wearKindsData = [
     subtitle: "STARTING AT 5$",
     img: wearKind3,
     url: "",
+  },
+];
+
+export const dashboardTabs = [
+  {
+    id: 1,
+    label: "Dashboard",
+    element: <DashboardTab />,
+    icon: speedMeterIcon
+  },
+  {
+    id: 2,
+    label: "Orders",
+    element: <Orders />,
+    icon: cartIcon
+  },
+  {
+    id: 3,
+    label: "Downloads",
+    element: <Downloads />,
+    icon: downloadIcon
+  },
+  {
+    id: 4,
+    label: "Addresses",
+    element: <Addresses />,
+    icon: homeIcon
+  },
+  {
+    id: 5,
+    label: "Payment Methods",
+    element: <PaymentMethods />,
+    icon: creditCardIcon
+  },
+  {
+    id: 6,
+    label: "Account details",
+    element: <AccountDetails />,
+    icon: personIcon
+  },
+  {
+    id: 7,
+    label: "Logout",
+    element: <DashboardTab />,
+    icon: logoutIcon
   },
 ];

@@ -5,8 +5,14 @@ import { FaRegHeart, FaStar, FaRegStar } from 'react-icons/fa';
 import { FaCartShopping } from 'react-icons/fa6';
 import { AiOutlineYoutube } from 'react-icons/ai';
 import Tab from '../components/common/Tab/Tab';
+<<<<<<< HEAD
 import Rating from '../components/common/Rating';
 import ProductSlider from '../components/common/Product Slider/ProductSlider';
+=======
+
+import { Button } from '../components/common/Button';
+import BreadCrumb from '../components/BreadCrumb';
+>>>>>>> 6c553b91a6d3ccf686e753ffdfbf2594aa1bd466
 
 export const ProductDetails = () => {
   return (
@@ -16,7 +22,7 @@ export const ProductDetails = () => {
           {/* HEADER AND ROUTER------------------------------------------- ------------------*/}
           <div className="hidden justify-between border-b border-[#e9e8e82e] py-4 lg:flex">
             <p>Allen Solly Men's Polo T-Shirt</p>
-            <p> Home Shop Product Details</p>
+            <BreadCrumb />
           </div>
 
           <div>
