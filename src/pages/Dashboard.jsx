@@ -38,14 +38,14 @@ const Dashboard = () => {
                 </MainContainer>
             </div>
             <MainContainer>
-                <div className='py-8'>
-                    <div className='flex flex-col md:flex-row gap-4 bg-dark-1 rounded-md p-4'>
+                <div className='py-8 flex justify-center'>
+                    <div className='flex flex-col lg:flex-row gap-4 bg-dark-1 max-w-[80%] lg:max-w-full lg:w-full rounded-md p-4'>
                         <div className='bg-dark-4 rounded-md flex-1 p-4'>
                             <ul className='text-white'>
                                 {items}
                             </ul>
                         </div>
-                        <div className='bg-dark-4 rounded-md flex-[2_2_0%] p-4'>
+                        <div className='bg-dark-4 rounded-md flex-[2_2_0%] p-4 h-max overflow-x-scroll lg:overflow-x-visible'>
                             {shownTab.element}
                         </div>
                     </div>

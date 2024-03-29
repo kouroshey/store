@@ -15,6 +15,16 @@
     color: rgb(255 255 255 / 70%);
     font-family: "Roboto", sans-serif;
   }
+
+  td,
+  th {
+    padding: 10px;
+    text-align: center;
+  }
+
+  tr {
+    @apply border-b border-b-border-1;
+  }
 }
 
 @layer base {
