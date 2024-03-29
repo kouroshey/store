@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import MainContainer from '../components/common/MainContainer'
 import { dashboardTabs } from '../data'
 
