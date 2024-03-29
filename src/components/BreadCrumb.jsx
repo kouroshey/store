@@ -13,7 +13,7 @@ const BreadCrumb = () => {
             currentPath = + `/${crumb}`
             return (
                 <Link to={currentPath} key={index} className="flex gap-2">
-                    <img src={buttomArrowIcon} className="w-4 -rotate-90" />
+                    <img src={buttomArrowIcon} className="w-3 -rotate-90" />
                     {crumb}
                 </Link>
             )
@@ -26,7 +26,7 @@ const BreadCrumb = () => {
     </Link>
 
     return (
-        <div className="flex gap-4 text-white text-xl">
+        <div className="flex gap-4 text-white text-md">
             {homeCrumb}
             {crumbs}
         </div>

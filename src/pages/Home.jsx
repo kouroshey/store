@@ -12,7 +12,6 @@ const Home = () => {
 
   return (
     <main className="flex flex-col gap-12">
-      <BreadCrump />
       <ImageSlider />
       <FirstIconBoxes />
       <WearKinds />
