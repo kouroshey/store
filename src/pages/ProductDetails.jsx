@@ -6,6 +6,9 @@ import { FaCartShopping } from 'react-icons/fa6';
 import { AiOutlineYoutube } from 'react-icons/ai';
 import Tab from '../components/common/Tab/Tab';
 
+import Rating from '../components/common/Rating';
+import ProductSlider from '../components/common/Product Slider/ProductSlider';
+
 import { Button } from '../components/common/Button';
 import BreadCrumb from '../components/BreadCrumb';
 
@@ -15,16 +18,16 @@ export const ProductDetails = () => {
       <MainContainer>
         <div>
           {/* HEADER AND ROUTER------------------------------------------- ------------------*/}
-          <div className="flex justify-between border-b border-[#e9e8e82e] py-4">
+          <div className="hidden justify-between border-b border-[#e9e8e82e] py-4 lg:flex">
             <p>Allen Solly Men's Polo T-Shirt</p>
             <BreadCrumb />
           </div>
 
           <div>
             {/*  PRODUCT DETAILS ---------------------------------- --------------------------*/}
-            <div className="flex py-3 text-xs">
+            <div className="flex py-3 text-xs flex-col lg:flex-row">
               {/* IMAGE PRODUCT AND COLOR----------- */}
-              <div className=" border border-[#e9e8e82e] flex-1">
+              <div className=" border border-[#e9e8e82e] flex-1 ">
                 <div className="flex justify-center">
                   <img src={ImageProduct} alt="" />
                 </div>
@@ -48,11 +51,7 @@ export const ProductDetails = () => {
                 <h1 className="text-xl font-bold">Allen Solly Men's Polo T-Shirt</h1>
                 <div className="flex gap-2">
                   <div className="flex">
-                    <FaStar />
-                    <FaStar />
-                    <FaStar />
-                    <FaStar />
-                    <FaRegStar />
+                    <Rating rate={2} />
                   </div>
                   <p>(24 Rating)</p>
                 </div>
@@ -63,8 +62,8 @@ export const ProductDetails = () => {
                 <div>
                   <div>Discription :</div>
                   <div className="">
-                    Virgil Abloh’s Off-White is a streetwear-inspired collection that continues to break away from the conventions of
-                    mainstream fashion. Made in Italy, these black and brown Odsy-1000 low-top sneakers.
+                    Virgil Abloh’s Off-White is a streetwear-inspired collection that continues to break away from the conventions of mainstream fashion. Made in Italy, these black
+                    and brown Odsy-1000 low-top sneakers.
                   </div>
                 </div>
                 <div className="flex gap-4">
@@ -124,10 +123,10 @@ export const ProductDetails = () => {
                   </div>
                 </div>
                 <div className="flex gap-2 border-b border-[#e9e8e82e] py-4">
-                  <button className="flex gap-2  px-5 py-3 bg-white text-black  text-sm items-center">
+                  <button className="flex gap-2  px-4 py-3 bg-white text-black  text-sm items-center btnchange">
                     <FaCartShopping /> ADD TO CART
                   </button>
-                  <button className="flex gap-2  px-5 py-3 bg-[#a0a0a05c] border border-slate-400 text-sm items-center">
+                  <button className="flex gap-2  px-4 py-3 bg-[#a0a0a05c] border border-slate-400 text-xs items-center">
                     <FaRegHeart /> ADD TO WASHLIST
                   </button>
                 </div>
@@ -137,13 +136,13 @@ export const ProductDetails = () => {
                   </div>
                   <div className="border-2 p-1 text-lg rounded-full border-[#f2f3f249] flex justify-center items-center">
                     <AiOutlineYoutube />
-                  </div>{' '}
+                  </div>
                   <div className="border-2 p-1 text-lg rounded-full border-[#f2f3f249] flex justify-center items-center">
                     <AiOutlineYoutube />
-                  </div>{' '}
+                  </div>
                   <div className="border-2 p-1 text-lg rounded-full border-[#f2f3f249] flex justify-center items-center">
                     <AiOutlineYoutube />
-                  </div>{' '}
+                  </div>
                   <div className="border-2 p-1 text-lg rounded-full border-[#f2f3f249] flex justify-center items-center">
                     <AiOutlineYoutube />
                   </div>
@@ -153,6 +152,9 @@ export const ProductDetails = () => {
           </div>
           <div>
             <Tab />
+          </div>
+          <div>
+            <ProductSlider />
           </div>
         </div>
       </MainContainer>

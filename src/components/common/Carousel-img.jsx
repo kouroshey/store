@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
-import { FaChevronLeft } from 'react-icons/fa';
-import { FaChevronRight } from 'react-icons/fa';
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 export default function Carousel({ slides }) {
   const [isHover, setIsHover] = useState(false);

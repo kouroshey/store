@@ -16,18 +16,19 @@ const Home = () => {
       <WearKinds />
       <FeaturedProduct title={'FEATURED PRODUCTS'} titleBtn={'More Product'} />
       <NewProduct title={'FEATURED PRODUCTS'} titleBtn={'More Product'} />
+<<<<<<< HEAD
+=======
 
+>>>>>>> 6c553b91a6d3ccf686e753ffdfbf2594aa1bd466
       <Arrivals />
       <div className="flex w-full justify-around">{<CardCategory />}</div>
 
-      {/* <div className="flex">
-        <TopProduct title={''} />
-        <TopProduct title={''} />
-        <TopProduct title={''} />
-        <TopProduct title={''} />
-      </div> */}
     </main>
   );
 };
+<<<<<<< HEAD
+
+=======
+>>>>>>> 6c553b91a6d3ccf686e753ffdfbf2594aa1bd466
 
 export default Home;
