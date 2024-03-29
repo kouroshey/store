@@ -20,13 +20,13 @@ const BreadCrumb = () => {
         }
         )
 
-    const homeCrumb = <Link to={'/'} className="flex gap-2">
+    const homeCrumb = <Link to={'/'} className="flex gap-2 items-center">
         <img src={homeIcon} className="w-4" />
         Home
     </Link>
 
     return (
-        <div className="flex gap-4 text-white text-md">
+        <div className="flex gap-4 text-white text-md items-center">
             {homeCrumb}
             {crumbs}
         </div>

@@ -286,3 +286,36 @@ export const dashboardTabs = [
     icon: logoutIcon
   },
 ];
+
+export const categories = [
+  {
+    id: "1",
+    title: "Clothings",
+    number: "42",
+    link: "clothings"
+  },
+  {
+    id: "2",
+    title: "Sunglasses",
+    number: "21",
+    link: "sunglasses"
+  },
+  {
+    id: "3",
+    title: "Bags",
+    number: "12",
+    link: "bags"
+  },
+  {
+    id: "4",
+    title: "Watches",
+    number: "18",
+    link: "watches"
+  },
+  {
+    id: "5",
+    title: "Furniture",
+    number: "8",
+    link: "furniture"
+  },
+]

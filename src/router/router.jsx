@@ -4,6 +4,7 @@ import Error404 from '../components/Error404';
 import Home from '../pages/Home';
 import ProductDetails from '../pages/ProductDetails';
 import Dashboard from '../pages/Dashboard';
+import Shop from '../pages/Shop';
 
 export const router = createBrowserRouter([
   {
@@ -14,6 +15,7 @@ export const router = createBrowserRouter([
       { path: '', element: <Home /> },
       { path: '/product-details', element: <ProductDetails /> },
       { path: '/dashboard', element: <Dashboard /> },
+      { path: '/shop', element: <Shop /> },
     ],
   },
 ]);

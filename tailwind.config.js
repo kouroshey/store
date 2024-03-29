@@ -22,6 +22,10 @@ export default {
       fontFamily: {
         Roboto: ["Roboto", "sans-serif"],
       },
+      flex: {
+        2: "2 2 0%",
+        3: "3 3 0%",
+      },
     },
   },
   plugins: [],
