@@ -5,14 +5,12 @@ import { FaRegHeart, FaStar, FaRegStar } from 'react-icons/fa';
 import { FaCartShopping } from 'react-icons/fa6';
 import { AiOutlineYoutube } from 'react-icons/ai';
 import Tab from '../components/common/Tab/Tab';
-<<<<<<< HEAD
+
 import Rating from '../components/common/Rating';
 import ProductSlider from '../components/common/Product Slider/ProductSlider';
-=======
 
 import { Button } from '../components/common/Button';
 import BreadCrumb from '../components/BreadCrumb';
->>>>>>> 6c553b91a6d3ccf686e753ffdfbf2594aa1bd466
 
 export const ProductDetails = () => {
   return (
