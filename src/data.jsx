@@ -335,3 +335,59 @@ export const sizes = [
     link: "large"
   },
 ]
+
+export const brands = [
+  {
+    id: "1",
+    label: "Adidas",
+    url: ""
+  },
+  {
+    id: "2",
+    label: "Adidas",
+    url: ""
+  },
+  {
+    id: "3",
+    label: "Adidas",
+    url: ""
+  },
+  {
+    id: "4",
+    label: "Adidas",
+    url: ""
+  },
+  {
+    id: "5",
+    label: "Adidas",
+    url: ""
+  },
+  {
+    id: "6",
+    label: "Adidas",
+    url: ""
+  },
+]
+
+export const colors = [
+  {
+    id: "1",
+    color: "#FFC107",
+    label: "Yellow"
+  },
+  {
+    id: "2",
+    color: "#FFC107",
+    label: "Yellow"
+  },
+  {
+    id: "3",
+    color: "#FFC107",
+    label: "Yellow"
+  },
+  {
+    id: "4",
+    color: "#FFC107",
+    label: "Yellow"
+  },
+]
