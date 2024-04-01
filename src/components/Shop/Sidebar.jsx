@@ -1,4 +1,4 @@
-import { categories, sizes } from "../../data"
+import { brands, categories, colors, sizes } from "../../data"
 import MultiRangeSlider from "../MultiRangeSlider"
 import { Button } from "../common/Button"
 import CheckBox from "../common/CheckBox"
@@ -36,11 +36,31 @@ const Sidebar = () => {
             {/* END OF PRICE SECTION */}
             {/* START OF SIZE SECTION */}
             <div className="flex gap-2 flex-col pb-4 border-b border-border-1">
+                <p className="text-md font-bold text-white">SIZE</p>
                 {sizes.map(size =>
                     <CheckBox key={size.id} label={size.title} />
                 )}
             </div>
             {/* END OF SIZE SECTION */}
+            {/* START OF BRANDS SECTION */}
+            <div className="flex gap-2 flex-col pb-4 border-b border-border-1">
+                <p className="text-md font-bold text-white">BRANDS</p>
+                {brands.map(brand =>
+                    <CheckBox key={brand.id} label={brand.label} />
+                )}
+            </div>
+            {/* END OF BRANDS SECTION */}
+            {/* START OF COLORS SECTION */}
+            <div className="flex gap-2 flex-col">
+                <p className="text-md font-bold text-white">BRANDS</p>
+                {colors.map(brand =>
+                    <label key={brand.id} className="group pl-6 block relative cursor-pointer text-md select-none">
+                        <span style={{ backgroundColor: brand.color }} className={`absolute top-1 flex justify-center items-center left-0 h-4 w-4 rounded-sm`} />
+                        {brand.label}
+                    </label>
+                )}
+            </div>
+            {/* END OF COLORS SECTION */}
         </section>
     )
 }
