@@ -71,13 +71,13 @@ const MultiRangeSlider = ({ min, max, onChange }) => {
 
             <div className="relative w-full">
                 {/* slider track */}
-                <div className="rounded-md h-2 absolute bg-[#ffffff26] w-full z-10" />
+                <div className="rounded-md h-2 absolute bg-full-transparent w-full z-10" />
                 {/* slider range */}
                 <div ref={range} className="rounded-md h-2 absolute bg-white z-20" />
                 {/* left value */}
-                <div className="text-gray-300 text-sm mt-5 absolute left-1">{minVal}</div>
+                <div className="text-gray-300 text-sm mt-5 absolute left-1">{minVal} $</div>
                 {/* right value */}
-                <div className="text-gray-300 text-sm mt-5 absolute right-1">{maxVal}</div>
+                <div className="text-gray-300 text-sm mt-5 absolute right-1">{maxVal} $</div>
             </div>
         </div>
     )

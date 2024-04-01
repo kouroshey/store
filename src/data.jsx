@@ -319,3 +319,19 @@ export const categories = [
     link: "furniture"
   },
 ]
+
+export const sizes = [
+  {
+    id: "1",
+    title: "Small",
+    link: "small"
+  }, {
+    id: "2",
+    title: "Medium",
+    link: "medium"
+  }, {
+    id: "3",
+    title: "Large",
+    link: "large"
+  },
+]

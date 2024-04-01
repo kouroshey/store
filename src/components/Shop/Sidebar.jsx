@@ -1,5 +1,7 @@
-import { categories } from "../../data"
-import MultiRangeSlider from "../range-slider/MultiRangeSlider"
+import { categories, sizes } from "../../data"
+import MultiRangeSlider from "../MultiRangeSlider"
+import { Button } from "../common/Button"
+import CheckBox from "../common/CheckBox"
 
 const Sidebar = () => {
 
@@ -19,14 +21,26 @@ const Sidebar = () => {
             </div>
             {/* END OF CATEGORIES SECTION */}
             {/* START OF PRICE SECTION */}
-            <div className="pb-4 border-b border-border-1 text-white">
-                <p className="text-md font-bold pb-4">PRICE</p>
+            <div className="pb-4 gap-6 flex flex-col border-b border-border-1 text-white">
+                <p className="text-md font-bold">PRICE</p>
                 <MultiRangeSlider
                     min={10}
                     max={1000}
                 />
+                <Button
+                    buttonStyle={"white"}
+                    text={"Filter"}
+                    customStyle={"text-xl py-0 mt-8 "}
+                />
             </div>
             {/* END OF PRICE SECTION */}
+            {/* START OF SIZE SECTION */}
+            <div className="flex gap-2 flex-col pb-4 border-b border-border-1">
+                {sizes.map(size =>
+                    <CheckBox key={size.id} label={size.title} />
+                )}
+            </div>
+            {/* END OF SIZE SECTION */}
         </section>
     )
 }
