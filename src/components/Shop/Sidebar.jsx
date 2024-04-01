@@ -54,7 +54,7 @@ const Sidebar = () => {
             <div className="flex gap-2 flex-col">
                 <p className="text-md font-bold text-white">BRANDS</p>
                 {colors.map(brand =>
-                    <label className="group pl-6 block relative cursor-pointer text-md select-none">
+                    <label key={brand.id} className="group pl-6 block relative cursor-pointer text-md select-none">
                         <span style={{ backgroundColor: brand.color }} className={`absolute top-1 flex justify-center items-center left-0 h-4 w-4 rounded-sm`} />
                         {brand.label}
                     </label>

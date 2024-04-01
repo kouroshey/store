@@ -5,7 +5,7 @@ export const Button = ({ buttonStyle, customStyle, text, icon, isLink, btnUrl })
     dark: 'bg-dark text-white border-black',
     transparent: 'bg-white bg-opacity-10',
     white: 'bg-white text-black',
-    default: 'font-semibold flex gap-2 items-center border transition-all ease-in-out text-xs w-full justify-center cursor-pointer focus:outline focus:outline-4 focus:outline-white-transparent focus:bg-white focus:text-black',
+    default: 'font-semibold flex gap-2 items-center border border-border-1 transition-all ease-in-out text-xs w-full justify-center cursor-pointer focus:outline focus:outline-4 focus:outline-white-transparent focus:bg-white focus:text-black',
   };
 
   return (

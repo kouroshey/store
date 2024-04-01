@@ -391,3 +391,166 @@ export const colors = [
     label: "Yellow"
   },
 ]
+
+export const products = [
+  {
+    id: "1",
+    label: "product",
+    category: "",
+    price: "",
+    offPrice: "",
+    popularity: "",
+    img: "",
+    url: ""
+  },
+  {
+    id: "2",
+    label: "product",
+    category: "",
+    price: "",
+    offPrice: "",
+    popularity: "",
+    img: "",
+    url: ""
+  },
+  {
+    id: "3",
+    label: "product",
+    category: "",
+    price: "",
+    offPrice: "",
+    popularity: "",
+    img: "",
+    url: ""
+  },
+  {
+    id: "4",
+    label: "product",
+    category: "",
+    price: "",
+    offPrice: "",
+    popularity: "",
+    img: "",
+    url: ""
+  },
+  {
+    id: "5",
+    label: "product",
+    category: "",
+    price: "",
+    offPrice: "",
+    popularity: "",
+    img: "",
+    url: ""
+  },
+  {
+    id: "6",
+    label: "product",
+    category: "",
+    price: "",
+    offPrice: "",
+    popularity: "",
+    img: "",
+    url: ""
+  },
+  {
+    id: "7",
+    label: "product",
+    category: "",
+    price: "",
+    offPrice: "",
+    popularity: "",
+    img: "",
+    url: ""
+  },
+  {
+    id: "8",
+    label: "product",
+    category: "",
+    price: "",
+    offPrice: "",
+    popularity: "",
+    img: "",
+    url: ""
+  },
+  {
+    id: "9",
+    label: "product",
+    category: "",
+    price: "",
+    offPrice: "",
+    popularity: "",
+    img: "",
+    url: ""
+  },
+  {
+    id: "10",
+    label: "product",
+    category: "",
+    price: "",
+    offPrice: "",
+    popularity: "",
+    img: "",
+    url: ""
+  },
+  {
+    id: "11",
+    label: "product",
+    category: "",
+    price: "",
+    offPrice: "",
+    popularity: "",
+    img: "",
+    url: ""
+  },
+  {
+    id: "12",
+    label: "product",
+    category: "",
+    price: "",
+    offPrice: "",
+    popularity: "",
+    img: "",
+    url: ""
+  },
+  {
+    id: "13",
+    label: "product",
+    category: "",
+    price: "",
+    offPrice: "",
+    popularity: "",
+    img: "",
+    url: ""
+  },
+  {
+    id: "14",
+    label: "product",
+    category: "",
+    price: "",
+    offPrice: "",
+    popularity: "",
+    img: "",
+    url: ""
+  },
+  {
+    id: "15",
+    label: "product",
+    category: "",
+    price: "",
+    offPrice: "",
+    popularity: "",
+    img: "",
+    url: ""
+  },
+  {
+    id: "16",
+    label: "product",
+    category: "",
+    price: "",
+    offPrice: "",
+    popularity: "",
+    img: "",
+    url: ""
+  },
+]
