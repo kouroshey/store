@@ -4,7 +4,7 @@ export const Button = ({ buttonStyle, customStyle, text, icon, isLink, btnUrl })
   const style = {
     dark: 'bg-dark text-white border-black',
     transparent: 'bg-white bg-opacity-10 outline-border-1 hover:outline-white',
-    white: 'bg-white text-black',
+    white: 'bg-white text-gray-700 outline-white',
     default: `px-2 py-2 font-semibold outline outline-1 flex gap-2 items-center border border-border-1
      transition-all ease-in-out text-xs w-full justify-center cursor-pointer 
     focus:outline-4 focus:outline-white-transparent focus:bg-white focus:text-black

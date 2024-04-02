@@ -2,6 +2,7 @@ import gridMenuIcon from "../../../public/assets/icons/grid-menu.svg"
 import gridMenuIconDark from "../../../public/assets/icons/grid-menu-dark.svg"
 import listMenuIcon from "../../../public/assets/icons/list-menu.svg"
 import listMenuIconDark from "../../../public/assets/icons/list-menu-dark.svg"
+import Select from "../common/Select"
 
 const PaginationControls = ({
     isListLayout,
@@ -15,12 +16,7 @@ const PaginationControls = ({
         <div className="flex justify-between items-center">
             <div className="flex items-center">
                 <span className="text-white text-sm min-w-16">Sort By:</span>
-                <select name="" id="" className="text-white py-2 px-2 text-sm outline-none focus:outline-4 focus:outline-white-transparent w-3/4 bg-dark-1 border-border-1 border-2">
-                    <option className="bg-dark-2" value="all">Default Sorting</option>
-                    <option className="bg-dark-2" value="one">Popularity</option>
-                    <option className="bg-dark-2" value="two">Price: low to high</option>
-                    <option className="bg-dark-2" value="three">price: high to low</option>
-                </select>
+                <Select />
             </div>
             <div className="flex gap-2">
                 <div className="flex items-center">
