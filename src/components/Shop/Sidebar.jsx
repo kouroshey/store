@@ -6,7 +6,7 @@ import CheckBox from "../common/CheckBox"
 const Sidebar = () => {
 
     return (
-        <section className="bg-dark-4 flex flex-col gap-4 p-4 shadow-md w-full">
+        <section className="bg-dark-4 flex flex-col gap-4 p-4 shadow-md w-full h-max">
             {/* START OF CATEGORIES SECTION */}
             <div className="pb-4 border-b border-border-1 text-white">
                 <p className="text-md font-bold pb-4">CATEGORIES</p>

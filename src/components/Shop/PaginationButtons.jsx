@@ -7,7 +7,7 @@ const PaginationButtons = ({
     setcurrentPage,
     pagesCount
 }) => {
-    const buttonStyle = " px-2 py-1 rounded-md border border-border-1 hover:bg-dark-1 transition-all flex items-center gap-4"
+    const buttonStyle = "px-3 py-1 text-sm rounded-sm border border-border-1 hover:bg-dark-1 transition-all flex items-center gap-4"
 
     let pageNumbers = [];
     for (let i = 1; i <= pagesCount; i++) {
@@ -27,7 +27,7 @@ const PaginationButtons = ({
                 <img src={arrow} className="rotate-90 w-4" /> Prev
             </button>
             {/* PAGE NUMBERS */}
-            <div className="flex gap-2 justify-center">
+            <div className="flex justify-center">
                 {pageNumbers.map((number, index) => (
                     <button
                         key={index}

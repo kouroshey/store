@@ -1,16 +1,17 @@
 import { useEffect, useState } from "react"
 import CardProduct from "../common/CardProduct"
 import PaginationButtons from "./PaginationButtons"
+import PaginationControls from "./PaginationControls"
 
 const Pagination = ({ products }) => {
     const [productsPerPage, setProductsPerPage] = useState(9)
     const [currentPage, setCurrentPage] = useState(1)
     const [slicedProducts, setSlicedProducts] = useState([])
+    const [isListLayout, setIsListLayout] = useState(false)
 
     const startPoint = (currentPage - 1) * productsPerPage
     const endPoint = startPoint + productsPerPage
     const pagesCount = Math.round(products.length / productsPerPage)
-    console.log(slicedProducts);
 
     useEffect(() => {
         setSlicedProducts(products.slice(startPoint, endPoint))
@@ -28,14 +29,25 @@ const Pagination = ({ products }) => {
         }
     }
 
+    const changeLayoutHandler = () => {
+        setIsListLayout(prev => !prev)
+    }
 
     return (
-        <section className="w-full">
+        <section className="w-full flex flex-col gap-8">
+            {/* pagination controls section =====================> */}
+            <PaginationControls
+                isListLayout={isListLayout}
+                changeLayoutHandler={changeLayoutHandler}
+                changeProductsPerPageHandler={setProductsPerPage}
+            />
+            {/* pagination center section =======================> */}
             <div className="pb-10 grid items-center justify-center max-w-96 md:max-w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-3 border-b border-b-border-1">
                 {slicedProducts?.map(product => (
                     <CardProduct key={product.id} />
                 ))}
             </div>
+            {/* pagination bottom buttons section ==================> */}
             <div className="pt-8">
                 <PaginationButtons
                     prevPageHandler={prevPageHandler}
@@ -50,8 +62,3 @@ const Pagination = ({ products }) => {
 }
 
 export default Pagination
-
-// slice products to 9 sections
-// show first 9 product
-// when click on next, show after 9 products
-// pagination page numbers: all products / productsPerPage ==> for loop
