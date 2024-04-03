@@ -15,7 +15,7 @@ const Home = () => {
       <FirstIconBoxes />
       <WearKinds />
       <FeaturedProduct title={'FEATURED PRODUCTS'} titleBtn={'More Product'} />
-      <NewProduct title={'FEATURED PRODUCTS'} titleBtn={'More Product'} />
+      <NewProduct title={'NEW ARRIVALS'} titleBtn={'View All'} />
       <Arrivals />
       <div className="flex w-full justify-around">{<CardCategory />}</div>
     </main>

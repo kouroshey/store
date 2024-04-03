@@ -44,7 +44,7 @@ const Pagination = ({ products }) => {
             {/* pagination center section =======================> */}
             <div className="pb-10 grid items-center justify-center max-w-96 md:max-w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-3 border-b border-b-border-1">
                 {slicedProducts?.map(product => (
-                    <CardProduct key={product.id} />
+                    <CardProduct key={product.id} {...product} />
                 ))}
             </div>
             {/* pagination bottom buttons section ==================> */}

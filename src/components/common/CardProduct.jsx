@@ -1,18 +1,66 @@
 import { RiRefreshLine } from 'react-icons/ri';
-import { FaRegHeart, FaStar, FaRegStar } from 'react-icons/fa';
-import ImageProduct from '../../../public/assets/img/featured-products/02.png';
+import { FaRegHeart } from 'react-icons/fa';
+import notFoundImg from "../../../public/assets/img/not-found.png"
 
 import { FaCartShopping } from 'react-icons/fa6';
 import { FiZoomIn } from 'react-icons/fi';
 import { Button } from './Button';
+
+import emptyStarIcon from "../../../public/assets/icons/star-empty.svg"
+import starIcon from "../../../public/assets/icons/star.svg"
+
 const CardProduct = ({
-    category,
-    label,
-    price,
-    offPrice,
-    popularity,
-    img,
+    label = "product",
+    category = "t-shirt",
+    price = "100",
+    offPrice = "80",
+    popularity = "3",
+    img = notFoundImg,
 }) => {
+    let popularityArray = [
+        {
+            id: 1,
+            src: emptyStarIcon
+        },
+        {
+            id: 2,
+            src: emptyStarIcon
+        },
+        {
+            id: 3,
+            src: emptyStarIcon
+        },
+        {
+            id: 4,
+            src: emptyStarIcon
+        },
+        {
+            id: 5,
+            src: emptyStarIcon
+        },
+    ]
+
+    const popularityArrayBuilder = () => {
+        const starCount = Number(popularity)
+        if (popularity) {
+            for (let i = 1; i <= starCount; i++) {
+                popularityArray.shift()
+            }
+
+            for (let i = 1; i <= starCount; i++) {
+                popularityArray.unshift({
+                    id: i,
+                    src: starIcon
+                })
+            }
+        }
+    }
+    popularityArrayBuilder()
+    const stars = popularityArray.map(star => (
+        <img key={star.id} src={star.src} className='w-6' />
+    ))
+
+
     return (
         <div className="h-[30rem] w-full flex flex-col py-2 px-3 gap-2 lg:hover:bg-dark-1 lg:hover:shadow-lg [&>:nth-child(4)]:hover:flex [&>:nth-child(1)>:nth-child(1)]:hover:flex ">
             {/* LIKE AND COMPIRE ------------------------------------*/}
@@ -29,26 +77,22 @@ const CardProduct = ({
             </div>
             {/* IMAGE PRODUCT------------------------------------**/}
             <div className="">
-                <img src={ImageProduct} alt="image-product" />
+                <img src={img} alt="image-product" />
             </div>
             {/* TEXT AND PRICE  ------------------------------------* */}
             <div className="flex flex-col gap-1">
-                <div className="text-[0.7rem]">Category Name</div>
-                <div className="text-[0.7rem] font-medium text-white">Product Short Name</div>
+                <div className="text-[0.7rem]">{category}</div>
+                <div className="text-[0.7rem] font-medium text-white">{label}</div>
                 <div className="flex items-center gap-1">
                     <div className="flex justify-between w-full">
                         <div className="flex gap-1">
                             <p className="text-[0.65rem]">
-                                <s>$99.05</s>
+                                <s>$ {price}</s>
                             </p>
-                            <p className="text-xs font-medium text-white">$44.00</p>
+                            <p className="text-xs font-medium text-white">$ {offPrice}</p>
                         </div>
                         <div className="flex gap-[0.1rem] ">
-                            <FaStar className="w-3" />
-                            <FaStar className="w-3" />
-                            <FaStar className="w-3" />
-                            <FaRegStar className="w-3" />
-                            <FaRegStar className="w-3" />
+                            {stars && stars}
                         </div>
                     </div>
                 </div>
