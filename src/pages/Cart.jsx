@@ -22,7 +22,7 @@ const Cart = () => {
             </section>
             {/* main section ===================>*/}
             <MainContainer>
-                <section className="flex flex-col lg:flex-row gap-4">
+                <section className="flex flex-col lg:flex-row gap-4 py-8">
                     {/* cart items ===================>*/}
                     <div className="flex flex1 md:flex-3 flex-col gap-4 py-4">
                         {/* product card===================> */}

@@ -18,7 +18,6 @@ const Home = () => {
       <NewProduct title={'FEATURED PRODUCTS'} titleBtn={'More Product'} />
       <Arrivals />
       <div className="flex w-full justify-around">{<CardCategory />}</div>
-
     </main>
   );
 };

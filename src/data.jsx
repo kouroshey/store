@@ -149,7 +149,18 @@ export const menuNavItems = [
   },
   {
     title: "SHOP",
-    url: "",
+    url: "shop",
+    children: [
+      {
+        title: "SHOP PAGES",
+        items: [
+          {
+            title: "CART PAGE",
+            url: "/shop/cart"
+          }
+        ],
+      },
+    ]
   },
   {
     title: "BLOG",
