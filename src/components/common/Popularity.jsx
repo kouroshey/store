@@ -42,7 +42,7 @@ const Popularity = ({ popularity }) => {
     }
     popularityArrayBuilder()
     const stars = popularityArray.map(star => (
-        <img key={star.id} src={star.src} className='w-6' />
+        <img key={star.id} src={star.src} className='w-4' />
     ))
     return (
         <>

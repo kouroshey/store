@@ -3,7 +3,8 @@ import { Button } from './Button';
 import MainContainer from './MainContainer';
 import CardProduct from './CardProduct';
 
-const FeaturedProduct = ({ title, titleBtn }) => {
+const FeaturedProduct = ({ title, titleBtn, products }) => {
+  const slicedProducts = products.slice(0, 8)
   return (
     <MainContainer>
       <div className="w-full">
@@ -13,17 +14,10 @@ const FeaturedProduct = ({ title, titleBtn }) => {
             <Button text={"More Product"} />
           </div>
         </div>
-        <div className="grid  items-center h-max lg:grid-cols-5 gap-16 items-center justify-center py-3 lg:gap-0">
-          <CardProduct />
-          <CardProduct />
-          <CardProduct />
-          <CardProduct />
-          <CardProduct />
-          <CardProduct />
-          <CardProduct />
-          <CardProduct />
-          <CardProduct />
-          <CardProduct />
+        <div className="pb-10 grid items-center justify-center max-w-96 md:max-w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-4 border-b border-b-border-1">
+          {slicedProducts?.map(product => (
+            <CardProduct key={product.id} {...product} />
+          ))}
         </div>
       </div>
     </MainContainer>

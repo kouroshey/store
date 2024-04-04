@@ -5,6 +5,7 @@ import WearKinds from '../components/Home/WearKinds';
 import Arrivals from '../components/Home/Arrivals';
 import FeaturedProduct from '../components/common/FeaturedProduct';
 import NewProduct from '../components/common/NewProduct';
+import { products } from '../data';
 // import TopProduct from '../components/common/TopProduct';
 
 const Home = () => {
@@ -14,8 +15,8 @@ const Home = () => {
       <ImageSlider />
       <FirstIconBoxes />
       <WearKinds />
-      <FeaturedProduct title={'FEATURED PRODUCTS'} titleBtn={'More Product'} />
-      <NewProduct title={'NEW ARRIVALS'} titleBtn={'View All'} />
+      <FeaturedProduct products={products} title={'FEATURED PRODUCTS'} titleBtn={'More Product'} />
+      <NewProduct products={products} title={'NEW ARRIVALS'} titleBtn={'View All'} />
       <Arrivals />
       <div className="flex w-full justify-around">{<CardCategory />}</div>
     </main>

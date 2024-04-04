@@ -12,9 +12,6 @@ const Arrivals = () => {
                 <FirstArrival />
                 <FirstArrival />
                 <FirstArrival />
-                {/* <SecondArrival />
-                <ThirdArrival />
-                <FourthArrival /> */}
             </section>
         </MainContainer>
     )
