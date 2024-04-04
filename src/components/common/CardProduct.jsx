@@ -5,9 +5,7 @@ import notFoundImg from "../../../public/assets/img/not-found.png"
 import { FaCartShopping } from 'react-icons/fa6';
 import { FiZoomIn } from 'react-icons/fi';
 import { Button } from './Button';
-
-import emptyStarIcon from "../../../public/assets/icons/star-empty.svg"
-import starIcon from "../../../public/assets/icons/star.svg"
+import Popularity from './Popularity';
 
 const CardProduct = ({
     label = "product",
@@ -17,50 +15,6 @@ const CardProduct = ({
     popularity = "3",
     img = notFoundImg,
 }) => {
-    let popularityArray = [
-        {
-            id: 1,
-            src: emptyStarIcon
-        },
-        {
-            id: 2,
-            src: emptyStarIcon
-        },
-        {
-            id: 3,
-            src: emptyStarIcon
-        },
-        {
-            id: 4,
-            src: emptyStarIcon
-        },
-        {
-            id: 5,
-            src: emptyStarIcon
-        },
-    ]
-
-    const popularityArrayBuilder = () => {
-        const starCount = Number(popularity)
-        if (popularity) {
-            for (let i = 1; i <= starCount; i++) {
-                popularityArray.shift()
-            }
-
-            for (let i = 1; i <= starCount; i++) {
-                popularityArray.unshift({
-                    id: i,
-                    src: starIcon
-                })
-            }
-        }
-    }
-    popularityArrayBuilder()
-    const stars = popularityArray.map(star => (
-        <img key={star.id} src={star.src} className='w-6' />
-    ))
-
-
     return (
         <div className="h-[30rem] w-full flex flex-col py-2 px-3 gap-2 lg:hover:bg-dark-1 lg:hover:shadow-lg [&>:nth-child(4)]:hover:flex [&>:nth-child(1)>:nth-child(1)]:hover:flex ">
             {/* LIKE AND COMPIRE ------------------------------------*/}
@@ -92,7 +46,7 @@ const CardProduct = ({
                             <p className="text-xs font-medium text-white">$ {offPrice}</p>
                         </div>
                         <div className="flex gap-[0.1rem] ">
-                            {stars && stars}
+                            <Popularity popularity={popularity} />
                         </div>
                     </div>
                 </div>

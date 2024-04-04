@@ -158,6 +158,10 @@ export const menuNavItems = [
         title: "SHOP PAGES",
         items: [
           {
+            title: "SHOP PAGE",
+            url: "/shop"
+          },
+          {
             title: "CART PAGE",
             url: "/shop/cart"
           }
