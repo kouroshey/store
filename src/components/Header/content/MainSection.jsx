@@ -11,7 +11,7 @@ import heartIcon from "../../../../public/assets/icons/heart.svg"
 import bagIcon from "../../../../public/assets/icons/bag.svg"
 
 
-const MainSection = ({ navShowHandler, isNavbarShow }) => {
+const MainSection = ({ navShowHandler }) => {
     const toggleMenuNav = () => {
         navShowHandler()
     }
@@ -57,12 +57,14 @@ const MainSection = ({ navShowHandler, isNavbarShow }) => {
                     {/* END OF MOBILE MENU ICON */}
                     {/* START OF RIGHT SECTION ICONS */}
                     <div className="flex gap-4 items-center">
-                        <span><img className="w-6" src={userIcon} /></span>
-                        <span><img className="w-6" src={heartIcon} /></span>
-                        <span className="relative">
-                            <img className="w-6" src={bagIcon} />
-                            <span className="absolute -top-1 -right-2 bg-dark-2 rounded-[50%] w-5 text-center text-white text-sm">6</span>
-                        </span>
+                        <Link to={"dashboard"}><img className="w-6" src={userIcon} /></Link>
+                        <Link to={"dashboard"}><img className="w-6" src={heartIcon} /></Link>
+                        <Link to={"/shop/cart"}>
+                            <span className="relative">
+                                <img className="w-6" src={bagIcon} />
+                                <span className="absolute -top-1 -right-2 bg-dark-2 rounded-[50%] w-5 text-center text-white text-sm">6</span>
+                            </span>
+                        </Link>
                     </div>
                     {/* END OF RIGHT SECTION ICONS */}
                 </div>

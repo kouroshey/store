@@ -3,21 +3,23 @@ import { useEffect, useState } from 'react';
 import CardProduct from '../../common/CardProduct';
 import MainContainer from '../MainContainer';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import { products } from '../../../data';
 
 const ProductSlider = ({ title, titleBtn }) => {
   const [isHover, setIsHover] = useState(false);
   const [curr, setCurr] = useState(0);
 
+  const slicedProducts = products.slice(0, 5)
   const hoverHandler = () => {
     setIsHover((prev) => !prev);
   };
 
   const preImag = () => {
-    return setCurr((curr) => (curr === 0 ? slides.length - 1 : curr - 1));
+    setCurr((curr) => (curr === 0 ? slicedProducts.length + 1 : curr - 1));
   };
 
   const nextImag = () => {
-    return setCurr((curr) => (curr === slides.length - 1 ? 0 : curr + 1));
+    setCurr((curr) => (curr === slicedProducts.length + 1 ? 0 : curr + 1));
   };
 
   useEffect(() => {
@@ -43,12 +45,10 @@ const ProductSlider = ({ title, titleBtn }) => {
             </div>
           </div>
         </div>
-        <div className="grid  items-center h-max lg:grid-cols-5 gap-16  justify-center py-3 lg:gap-0">
-          <CardProduct />
-          <CardProduct />
-          <CardProduct />
-          <CardProduct />
-          <CardProduct />
+        <div className="py-10 grid items-center justify-center max-w-96 md:max-w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-5">
+          {slicedProducts?.map(product => (
+            <CardProduct key={product.id} {...product} />
+          ))}
         </div>
       </div>
     </MainContainer>

@@ -108,7 +108,7 @@ export const socialMediaIcons = [
 export const menuNavItems = [
   {
     title: "HOME",
-    url: "",
+    url: "/",
   },
   {
     title: "CATEGORIES",
@@ -164,6 +164,10 @@ export const menuNavItems = [
           {
             title: "CART PAGE",
             url: "/shop/cart"
+          },
+          {
+            title: "PRODUCT DETAILS PAGE",
+            url: '/product-details'
           }
         ],
       },
