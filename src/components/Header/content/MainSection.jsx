@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import MainContainer from "../../common/MainContainer"
+import Select from "../../common/Select"
 
 import logoIcon from "../../../../public/assets/logo-icon.png"
 import searchIcon from "../../../../public/assets/icons/search.svg"
@@ -8,6 +9,7 @@ import menuIcon from "../../../../public/assets/menu-icon.svg"
 import userIcon from "../../../../public/assets/icons/user.svg"
 import heartIcon from "../../../../public/assets/icons/heart.svg"
 import bagIcon from "../../../../public/assets/icons/bag.svg"
+
 
 const MainSection = ({ navShowHandler, isNavbarShow }) => {
     const toggleMenuNav = () => {
@@ -26,12 +28,7 @@ const MainSection = ({ navShowHandler, isNavbarShow }) => {
                 {/* START OF SEARCHBAR SECTION */}
                 <div className="flex grow gap-0 order-2">
                     <input placeholder="Search for Products" type="text" className="rounded-l-md bg-dark-1 border-border-1 border-2 py-2 w-full px-2 text-white outline-none" />
-                    <select name="" id="" className="text-white text-lg w-3/4 bg-dark-1 px-2 border-border-1 border-2">
-                        <option className="bg-dark-2" value="all">All Categories</option>
-                        <option className="bg-dark-2" value="one">one</option>
-                        <option className="bg-dark-2" value="two">two</option>
-                        <option className="bg-dark-2" value="three">three</option>
-                    </select>
+                    <Select options={["All Categories", "one", "two", "tree"]} />
                     <span className="cursor-pointer bg-dark-1 flex px-3 items-center justify-center p-1 rounded-r-md border-border-1 border-2 text-white fill-current">
                         <img src={searchIcon} className="w-5" />
                     </span>

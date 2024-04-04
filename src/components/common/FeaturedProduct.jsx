@@ -14,7 +14,7 @@ const FeaturedProduct = ({ title, titleBtn, products }) => {
             <Button text={"More Product"} />
           </div>
         </div>
-        <div className="pb-10 grid items-center justify-center max-w-96 md:max-w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-4 border-b border-b-border-1">
+        <div className="grid items-center justify-center max-w-96 md:max-w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           {slicedProducts?.map(product => (
             <CardProduct key={product.id} {...product} />
           ))}
