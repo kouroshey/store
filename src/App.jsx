@@ -6,7 +6,8 @@ const App = () => {
   return (
     <main className='relative'>
       <Layout>
-        <Outlet />
+        {/* <Outlet /> */}
+        <p className='text-4xl'>کص عمت ایمان حیدری سیبکی</p>
       </Layout>
     </main>
   )
