@@ -1,24 +1,14 @@
-import { supabase } from "../../lib/supabase/config"
 
-const Login = () => {
-    // console.log(supabase.auth.signInWithOAuth({ provider: "google" }));
-    const loginHandler = async () => {
-        const { data, error } = await supabase.auth.signInWithOAuth({
-            provider: "google",
-            options: {
-                queryParams: {
-                    accessType: "offline",
-                    prompt: "consent",
-                }
-            }
-        })
+export const Login = ({ setIsSignedUp }) => {
+
+    const redirectToSignup = () => {
+        setIsSignedUp(false)
     }
 
     return (
-        <div>
-            <button onClick={loginHandler}>login</button>
+        <div className="flex flex-col gap-4">
+            <button>login</button>
+            <button>U have not register yet? <span className="text-red-500" onClick={redirectToSignup}>SignUp</span></button>
         </div>
     )
 }
-
-export default Login
