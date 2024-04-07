@@ -10,10 +10,10 @@ const Navbar = () => {
             <nav className='hidden lg:block'>
                 <ul className='flex gap-8 text-white text-xs'>
                     {menuNavItems.map((item, index) => (
-                        <Link to={item.url} className='flex items-center gap-2 group py-4 relative'>
-                            <li key={index}>
+                        <li key={index} className='flex items-center gap-2 group py-4 relative'>
+                            <Link to={item.url}>
                                 {item.title}
-                            </li>
+                            </Link>
                             {/* if we have submenu */}
                             {item.children &&
                                 <>
@@ -34,7 +34,7 @@ const Navbar = () => {
                                     </div>
                                 </>
                             }
-                        </Link>
+                        </li>
                     ))}
                 </ul>
             </nav>

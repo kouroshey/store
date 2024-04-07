@@ -1,7 +1,9 @@
 /* eslint-disable react/prop-types */
 import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
-import mainBg from "../../public/assets/img/1.png"
+import mainBg from "../../public/assets/img/1.png";
+import { Outlet } from 'react-router-dom'
+
 
 const Layout = ({ children }) => {
   const sectionStyle = {
@@ -10,7 +12,7 @@ const Layout = ({ children }) => {
   return (
     <div className="bg-image bg-cover bg-no-repeat bg-center bg-fixed" style={sectionStyle}>
       <Header />
-      {children}
+      <Outlet />
       <Footer />
     </div>
   );

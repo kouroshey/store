@@ -7,11 +7,13 @@ import Dashboard from '../_root/pages/Dashboard';
 import Shop from '../_root/pages/Shop';
 import Cart from '../_root/pages/Cart';
 import AuthLayout from '../_auth/AuthLayout';
+import Login from '../_auth/forms/Login';
+import Layout from '../_root/Layout';
 
 export const router = createBrowserRouter([
   {
     path: '/',
-    element: <App />,
+    element: <Layout />,
     errorElement: <Error404 />,
     children: [
       { path: '', element: <Home /> },
@@ -19,7 +21,14 @@ export const router = createBrowserRouter([
       { path: '/dashboard', element: <Dashboard /> },
       { path: '/shop', element: <Shop />, },
       { path: "/shop/cart", element: <Cart /> },
-      { path: "/auth", element: <AuthLayout /> },
     ],
   },
+  {
+    element: <AuthLayout />,
+    path: "/",
+    errorElement: <Error404 />,
+    children: [
+      { path: "/login", element: <Login /> },
+    ]
+  }
 ]);
