@@ -1,4 +1,4 @@
-
+import { supabase } from "../../lib/supabase/config"
 export const Login = ({ setIsSignedUp }) => {
 
     const redirectToSignup = () => {
