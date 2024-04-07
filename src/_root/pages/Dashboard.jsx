@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import MainContainer from '../components/common/MainContainer'
-import { dashboardTabs } from '../data'
-import BreadCrumb from '../components/BreadCrumb'
+import MainContainer from '../../components/common/MainContainer'
+import { dashboardTabs } from '../../data'
+import BreadCrumb from '../../components/BreadCrumb'
 
 const Dashboard = () => {
     const [shownTab, setShownTab] = useState(dashboardTabs[0])

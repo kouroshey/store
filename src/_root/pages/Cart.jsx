@@ -1,12 +1,12 @@
-import BreadCrumb from "../components/BreadCrumb"
-import CartItem from "../components/Cart/CartItem"
-import MainContainer from "../components/common/MainContainer"
-import CartSidebar from "../components/Cart/CartSidebar"
-import { Button } from "../components/common/Button"
+import BreadCrumb from "../../components/BreadCrumb"
+import CartItem from "../../components/Cart/CartItem"
+import MainContainer from "../../components/common/MainContainer"
+import CartSidebar from "../../components/Cart/CartSidebar"
+import { Button } from "../../components/common/Button"
 
-import bagIcon from "../../public/assets/icons/bag.svg"
-import updateIcon from "../../public/assets/icons/circle-arrow-dark.svg"
-import deleteIcon from "../../public/assets/icons/delete.svg"
+import bagIcon from "../../../public/assets/icons/bag.svg"
+import updateIcon from "../../../public/assets/icons/circle-arrow-dark.svg"
+import deleteIcon from "../../../public/assets/icons/delete.svg"
 
 const Cart = () => {
     return (

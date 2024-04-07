@@ -1,16 +1,14 @@
-import React from 'react';
-import MainContainer from '../components/common/MainContainer';
-import ImageProduct from '../../public/assets/img/featured-products/04.png';
+import MainContainer from '../../components/common/MainContainer';
+import ImageProduct from '../../../public/assets/img/featured-products/04.png';
 import { FaRegHeart, FaStar, FaRegStar } from 'react-icons/fa';
 import { FaCartShopping } from 'react-icons/fa6';
 import { AiOutlineYoutube } from 'react-icons/ai';
-import Tab from '../components/common/Tab/Tab';
+import Tab from '../../components/common/Tab/Tab';
 
-import Rating from '../components/common/Rating';
-import ProductSlider from '../components/common/Product Slider/ProductSlider';
+import Rating from '../../components/common/Rating';
+import ProductSlider from '../../components/common/Product Slider/ProductSlider';
 
-import { Button } from '../components/common/Button';
-import BreadCrumb from '../components/BreadCrumb';
+import BreadCrumb from '../../components/BreadCrumb';
 
 export const ProductDetails = () => {
   return (

@@ -1,8 +1,8 @@
-import MainContainer from "../components/common/MainContainer"
-import BreadCrumb from "../components/BreadCrumb"
-import Sidebar from "../components/Shop/Sidebar"
-import Pagination from "../components/Shop/Pagination"
-import { products } from "../data"
+import MainContainer from "../../components/common/MainContainer"
+import BreadCrumb from "../../components/BreadCrumb"
+import Sidebar from "../../components/Shop/Sidebar"
+import Pagination from "../../components/Shop/Pagination"
+import { products } from "../../data"
 
 const Shop = () => {
     return (
