@@ -11,12 +11,12 @@ import heartIcon from "../../../../public/assets/icons/heart.svg"
 import bagIcon from "../../../../public/assets/icons/bag.svg"
 import { useAuthContext } from "../../../context/AuthContext"
 
-
 const MainSection = ({ navShowHandler }) => {
     const toggleMenuNav = () => {
         navShowHandler()
     }
     const authContext = useAuthContext()
+
     return (
         <MainContainer>
             <section className="py-4 gap-4 lg:gap-12 flex flex-col lg:flex-row justify-between w-full">
@@ -59,8 +59,14 @@ const MainSection = ({ navShowHandler }) => {
                     {/* END OF MOBILE MENU ICON */}
                     {/* START OF RIGHT SECTION ICONS */}
                     <div className="flex gap-4 items-center">
-                        <Link to={authContext.isLogin ? "dashboard" : "login"}><img className="w-6" src={userIcon} /></Link>
-                        <Link to={"dashboard"}><img className="w-6" src={heartIcon} /></Link>
+                        <Link
+                            to={authContext.isLogin ? "dashboard" : "login"}>
+                            <img className="w-6 rounded-full"
+                                src={authContext.isLogin ? authContext.user.icon : userIcon} />
+                        </Link>
+                        <Link to={"dashboard"}>
+                            <img className="w-6" src={heartIcon} />
+                        </Link>
                         <Link to={"/shop/cart"}>
                             <span className="relative">
                                 <img className="w-6" src={bagIcon} />

@@ -2,9 +2,12 @@ import { useState } from 'react'
 import MainContainer from '../../components/common/MainContainer'
 import { dashboardTabs } from '../../data'
 import BreadCrumb from '../../components/BreadCrumb'
+import { useAuthContext } from '../../context/AuthContext'
 
 const Dashboard = () => {
     const [shownTab, setShownTab] = useState(dashboardTabs[0])
+
+    const authContext = useAuthContext()
 
     const showTabHandler = (tab) => {
         const tabId = tab.target.id

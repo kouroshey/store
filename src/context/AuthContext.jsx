@@ -6,7 +6,8 @@ const initialUser = {
   username: "",
   email: "",
   accessToken: "",
-  refreshToekn: ""
+  refreshToekn: "",
+  icon: ""
 };
 
 const initialContext = {
@@ -30,7 +31,9 @@ export const AuthContextProvider = ({ children }) => {
         name: userData.full_name,
         email: userData.email,
         accessToken: local.access_token,
-        refreshToekn: local.refresh_token
+        refreshToekn: local.refresh_token,
+        icon: userData.avatar_url,
+        picture: userData.picture
       }
       setUser(loggedInUser)
     }
