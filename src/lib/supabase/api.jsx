@@ -1,4 +1,6 @@
-const loginHandler = async () => {
+import { supabase } from "./config";
+
+export const loginHandler = async () => {
   const { data, error } = await supabase.auth.signInWithOAuth({
     provider: "google",
     options: {

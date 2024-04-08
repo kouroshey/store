@@ -1,21 +1,18 @@
 import { supabase } from "../../lib/supabase/config"
+import { useLoginHandler } from "../../lib/react-query/queriesAndMutations"
+
 export const Login = ({ setIsSignedUp }) => {
+
+    const {
+        isPending,
+        mutateAsync: loginHandler
+    } = useLoginHandler()
 
     const redirectToSignup = () => {
         setIsSignedUp(false)
     }
 
-    const loginHandler = async () => {
-        const { data, error } = await supabase.auth.signInWithOAuth({
-            provider: "google",
-            options: {
-                queryParams: {
-                    accessType: "offline",
-                    prompt: "consent",
-                },
-            },
-        });
-    };
+    // sb-hdtoxgvpkioavkookevq-auth-token
 
     return (
         <div className="flex flex-col gap-4">
